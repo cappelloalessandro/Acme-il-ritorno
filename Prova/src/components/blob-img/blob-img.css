@@ -1,0 +1,11 @@
+:host {
+  display: block;
+  
+}
+ img{
+   position: absolute;
+   
+right:150px;
+  width:562px; 
+  height:502px;
+ }
