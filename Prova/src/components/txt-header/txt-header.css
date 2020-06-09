@@ -1,0 +1,32 @@
+
+div{
+  font-family: 'Poppins';}
+
+:host {
+  display: block;
+}
+
+h1{
+  font-size: 60px;
+  color: white;
+
+}
+
+p{
+  font-size: 30px;
+  color: white;
+}
+
+button{
+text-transform: uppercase;;
+background-color:#11A5E6;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+
+cursor: pointer;}
