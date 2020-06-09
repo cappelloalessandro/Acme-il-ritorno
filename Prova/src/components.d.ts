@@ -6,9 +6,19 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface BcgHeader {
+    }
+    interface BlobImg {
+    }
     interface CarCard {
     }
     interface ContenitoreFlex {
+    }
+    interface FormBgcImg {
+    }
+    interface FormComponent {
+    }
+    interface FormWrapper {
     }
     interface HealtCard {
     }
@@ -18,12 +28,30 @@ export namespace Components {
     }
     interface MoneyCard {
     }
+    interface NamedSlotParagraph {
+    }
+    interface SlotParagraph {
+    }
     interface TravelCard {
+    }
+    interface TxtHeader {
     }
     interface UmbrellaCard {
     }
 }
 declare global {
+    interface HTMLBcgHeaderElement extends Components.BcgHeader, HTMLStencilElement {
+    }
+    var HTMLBcgHeaderElement: {
+        prototype: HTMLBcgHeaderElement;
+        new (): HTMLBcgHeaderElement;
+    };
+    interface HTMLBlobImgElement extends Components.BlobImg, HTMLStencilElement {
+    }
+    var HTMLBlobImgElement: {
+        prototype: HTMLBlobImgElement;
+        new (): HTMLBlobImgElement;
+    };
     interface HTMLCarCardElement extends Components.CarCard, HTMLStencilElement {
     }
     var HTMLCarCardElement: {
@@ -35,6 +63,24 @@ declare global {
     var HTMLContenitoreFlexElement: {
         prototype: HTMLContenitoreFlexElement;
         new (): HTMLContenitoreFlexElement;
+    };
+    interface HTMLFormBgcImgElement extends Components.FormBgcImg, HTMLStencilElement {
+    }
+    var HTMLFormBgcImgElement: {
+        prototype: HTMLFormBgcImgElement;
+        new (): HTMLFormBgcImgElement;
+    };
+    interface HTMLFormComponentElement extends Components.FormComponent, HTMLStencilElement {
+    }
+    var HTMLFormComponentElement: {
+        prototype: HTMLFormComponentElement;
+        new (): HTMLFormComponentElement;
+    };
+    interface HTMLFormWrapperElement extends Components.FormWrapper, HTMLStencilElement {
+    }
+    var HTMLFormWrapperElement: {
+        prototype: HTMLFormWrapperElement;
+        new (): HTMLFormWrapperElement;
     };
     interface HTMLHealtCardElement extends Components.HealtCard, HTMLStencilElement {
     }
@@ -60,11 +106,29 @@ declare global {
         prototype: HTMLMoneyCardElement;
         new (): HTMLMoneyCardElement;
     };
+    interface HTMLNamedSlotParagraphElement extends Components.NamedSlotParagraph, HTMLStencilElement {
+    }
+    var HTMLNamedSlotParagraphElement: {
+        prototype: HTMLNamedSlotParagraphElement;
+        new (): HTMLNamedSlotParagraphElement;
+    };
+    interface HTMLSlotParagraphElement extends Components.SlotParagraph, HTMLStencilElement {
+    }
+    var HTMLSlotParagraphElement: {
+        prototype: HTMLSlotParagraphElement;
+        new (): HTMLSlotParagraphElement;
+    };
     interface HTMLTravelCardElement extends Components.TravelCard, HTMLStencilElement {
     }
     var HTMLTravelCardElement: {
         prototype: HTMLTravelCardElement;
         new (): HTMLTravelCardElement;
+    };
+    interface HTMLTxtHeaderElement extends Components.TxtHeader, HTMLStencilElement {
+    }
+    var HTMLTxtHeaderElement: {
+        prototype: HTMLTxtHeaderElement;
+        new (): HTMLTxtHeaderElement;
     };
     interface HTMLUmbrellaCardElement extends Components.UmbrellaCard, HTMLStencilElement {
     }
@@ -73,20 +137,38 @@ declare global {
         new (): HTMLUmbrellaCardElement;
     };
     interface HTMLElementTagNameMap {
+        "bcg-header": HTMLBcgHeaderElement;
+        "blob-img": HTMLBlobImgElement;
         "car-card": HTMLCarCardElement;
         "contenitore-flex": HTMLContenitoreFlexElement;
+        "form-bgc-img": HTMLFormBgcImgElement;
+        "form-component": HTMLFormComponentElement;
+        "form-wrapper": HTMLFormWrapperElement;
         "healt-card": HTMLHealtCardElement;
         "house-card": HTMLHouseCardElement;
         "img-service": HTMLImgServiceElement;
         "money-card": HTMLMoneyCardElement;
+        "named-slot-paragraph": HTMLNamedSlotParagraphElement;
+        "slot-paragraph": HTMLSlotParagraphElement;
         "travel-card": HTMLTravelCardElement;
+        "txt-header": HTMLTxtHeaderElement;
         "umbrella-card": HTMLUmbrellaCardElement;
     }
 }
 declare namespace LocalJSX {
+    interface BcgHeader {
+    }
+    interface BlobImg {
+    }
     interface CarCard {
     }
     interface ContenitoreFlex {
+    }
+    interface FormBgcImg {
+    }
+    interface FormComponent {
+    }
+    interface FormWrapper {
     }
     interface HealtCard {
     }
@@ -96,18 +178,32 @@ declare namespace LocalJSX {
     }
     interface MoneyCard {
     }
+    interface NamedSlotParagraph {
+    }
+    interface SlotParagraph {
+    }
     interface TravelCard {
+    }
+    interface TxtHeader {
     }
     interface UmbrellaCard {
     }
     interface IntrinsicElements {
+        "bcg-header": BcgHeader;
+        "blob-img": BlobImg;
         "car-card": CarCard;
         "contenitore-flex": ContenitoreFlex;
+        "form-bgc-img": FormBgcImg;
+        "form-component": FormComponent;
+        "form-wrapper": FormWrapper;
         "healt-card": HealtCard;
         "house-card": HouseCard;
         "img-service": ImgService;
         "money-card": MoneyCard;
+        "named-slot-paragraph": NamedSlotParagraph;
+        "slot-paragraph": SlotParagraph;
         "travel-card": TravelCard;
+        "txt-header": TxtHeader;
         "umbrella-card": UmbrellaCard;
     }
 }
@@ -115,13 +211,21 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "bcg-header": LocalJSX.BcgHeader & JSXBase.HTMLAttributes<HTMLBcgHeaderElement>;
+            "blob-img": LocalJSX.BlobImg & JSXBase.HTMLAttributes<HTMLBlobImgElement>;
             "car-card": LocalJSX.CarCard & JSXBase.HTMLAttributes<HTMLCarCardElement>;
             "contenitore-flex": LocalJSX.ContenitoreFlex & JSXBase.HTMLAttributes<HTMLContenitoreFlexElement>;
+            "form-bgc-img": LocalJSX.FormBgcImg & JSXBase.HTMLAttributes<HTMLFormBgcImgElement>;
+            "form-component": LocalJSX.FormComponent & JSXBase.HTMLAttributes<HTMLFormComponentElement>;
+            "form-wrapper": LocalJSX.FormWrapper & JSXBase.HTMLAttributes<HTMLFormWrapperElement>;
             "healt-card": LocalJSX.HealtCard & JSXBase.HTMLAttributes<HTMLHealtCardElement>;
             "house-card": LocalJSX.HouseCard & JSXBase.HTMLAttributes<HTMLHouseCardElement>;
             "img-service": LocalJSX.ImgService & JSXBase.HTMLAttributes<HTMLImgServiceElement>;
             "money-card": LocalJSX.MoneyCard & JSXBase.HTMLAttributes<HTMLMoneyCardElement>;
+            "named-slot-paragraph": LocalJSX.NamedSlotParagraph & JSXBase.HTMLAttributes<HTMLNamedSlotParagraphElement>;
+            "slot-paragraph": LocalJSX.SlotParagraph & JSXBase.HTMLAttributes<HTMLSlotParagraphElement>;
             "travel-card": LocalJSX.TravelCard & JSXBase.HTMLAttributes<HTMLTravelCardElement>;
+            "txt-header": LocalJSX.TxtHeader & JSXBase.HTMLAttributes<HTMLTxtHeaderElement>;
             "umbrella-card": LocalJSX.UmbrellaCard & JSXBase.HTMLAttributes<HTMLUmbrellaCardElement>;
         }
     }

@@ -2,7 +2,7 @@ import { Component, ComponentInterface, h } from '@stencil/core';
 
 @Component({
   tag: 'car-card',
-  styleUrl: 'car-card.css',
+  styleUrl: 'car-card.scss',
   shadow: true,
 })
 export class CarCard implements ComponentInterface {
