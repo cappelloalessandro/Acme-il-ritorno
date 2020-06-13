@@ -9,17 +9,40 @@ export class ContactForm implements ComponentInterface {
 
   render() {
     return (
-    <div id="form">
-    <h1>Non esitare a contattarci!</h1>
+      // form component
+
+  <div class="wrapper">
+
+    <div class="bgc">
+     {/* <p class="title">NON ESITARE A CONTATTARCI!</p> */}
+    </div>
+    
     <form>
-      <label htmlFor="fname">Nome</label>
-      <input type="text" name="fname"placeholder="Nome" required></input>
-      <label htmlFor="fname">Cognome</label>
-      <input type="text" name="sname"placeholder="Cognome" required></input>
-      <label htmlFor="mail">Mail</label>
-      <input type="text" name="mail" placeholder="namesname@gmail.com" required></input>
-      <input class="submit" type="submit" value="Submit"></input>
-    </form>
+        <p>
+          <label>Nome e cognome *</label>
+          <input type="text" name="namesname" placeholder="nome e cognome" required/>
+        </p>
+        <p>
+          <label>Email *</label>
+          <input type="email" name="email" placeholder="email" required/>
+        </p>
+        <p>
+          <label>Cell</label>
+          <input type="tel" name="tel" placeholder="n° cellulare"/>
+        </p>
+        <p>
+          <label>Argomento</label>
+          <input type="text" name="argomento" placeholder="argomento"/>
+        </p>
+        <p class="full-width">
+          <label>Scrivici un messaggio *</label>
+          <textarea name="messaggio" id="message"required></textarea>
+        </p>
+        <p class="full-width">
+          <button type="submit"><strong>Submit</strong></button>
+        </p>
+      </form>
+
   </div>
       
     );

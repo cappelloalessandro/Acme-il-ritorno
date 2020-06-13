@@ -8,13 +8,19 @@ import { Component, ComponentInterface, h} from '@stencil/core';
 export class FormWrapper implements ComponentInterface {
 
   render() {
-    return(
+    return (
       <div class="wrapper">
-        <div class="bgc-img">
-          <div class="overlay"></div>
-          <contact-form></contact-form>
+
+        <div class="title grid">
+          <div></div>
+          <div class="little_title"><h3 >Contatti</h3>
+          <p>Non farti scrupoli, se hai un problema scrivici!</p></div>
+          <div></div>
         </div>
+
+        <contact-form></contact-form>
       </div>
+
     );
   }
 
