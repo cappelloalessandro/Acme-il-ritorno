@@ -12,11 +12,9 @@ export namespace Components {
     }
     interface CarCard {
     }
+    interface ContactForm {
+    }
     interface ContenitoreFlex {
-    }
-    interface FormBgcImg {
-    }
-    interface FormComponent {
     }
     interface FormWrapper {
     }
@@ -58,23 +56,17 @@ declare global {
         prototype: HTMLCarCardElement;
         new (): HTMLCarCardElement;
     };
+    interface HTMLContactFormElement extends Components.ContactForm, HTMLStencilElement {
+    }
+    var HTMLContactFormElement: {
+        prototype: HTMLContactFormElement;
+        new (): HTMLContactFormElement;
+    };
     interface HTMLContenitoreFlexElement extends Components.ContenitoreFlex, HTMLStencilElement {
     }
     var HTMLContenitoreFlexElement: {
         prototype: HTMLContenitoreFlexElement;
         new (): HTMLContenitoreFlexElement;
-    };
-    interface HTMLFormBgcImgElement extends Components.FormBgcImg, HTMLStencilElement {
-    }
-    var HTMLFormBgcImgElement: {
-        prototype: HTMLFormBgcImgElement;
-        new (): HTMLFormBgcImgElement;
-    };
-    interface HTMLFormComponentElement extends Components.FormComponent, HTMLStencilElement {
-    }
-    var HTMLFormComponentElement: {
-        prototype: HTMLFormComponentElement;
-        new (): HTMLFormComponentElement;
     };
     interface HTMLFormWrapperElement extends Components.FormWrapper, HTMLStencilElement {
     }
@@ -140,9 +132,8 @@ declare global {
         "bcg-header": HTMLBcgHeaderElement;
         "blob-img": HTMLBlobImgElement;
         "car-card": HTMLCarCardElement;
+        "contact-form": HTMLContactFormElement;
         "contenitore-flex": HTMLContenitoreFlexElement;
-        "form-bgc-img": HTMLFormBgcImgElement;
-        "form-component": HTMLFormComponentElement;
         "form-wrapper": HTMLFormWrapperElement;
         "healt-card": HTMLHealtCardElement;
         "house-card": HTMLHouseCardElement;
@@ -162,11 +153,9 @@ declare namespace LocalJSX {
     }
     interface CarCard {
     }
+    interface ContactForm {
+    }
     interface ContenitoreFlex {
-    }
-    interface FormBgcImg {
-    }
-    interface FormComponent {
     }
     interface FormWrapper {
     }
@@ -192,9 +181,8 @@ declare namespace LocalJSX {
         "bcg-header": BcgHeader;
         "blob-img": BlobImg;
         "car-card": CarCard;
+        "contact-form": ContactForm;
         "contenitore-flex": ContenitoreFlex;
-        "form-bgc-img": FormBgcImg;
-        "form-component": FormComponent;
         "form-wrapper": FormWrapper;
         "healt-card": HealtCard;
         "house-card": HouseCard;
@@ -214,9 +202,8 @@ declare module "@stencil/core" {
             "bcg-header": LocalJSX.BcgHeader & JSXBase.HTMLAttributes<HTMLBcgHeaderElement>;
             "blob-img": LocalJSX.BlobImg & JSXBase.HTMLAttributes<HTMLBlobImgElement>;
             "car-card": LocalJSX.CarCard & JSXBase.HTMLAttributes<HTMLCarCardElement>;
+            "contact-form": LocalJSX.ContactForm & JSXBase.HTMLAttributes<HTMLContactFormElement>;
             "contenitore-flex": LocalJSX.ContenitoreFlex & JSXBase.HTMLAttributes<HTMLContenitoreFlexElement>;
-            "form-bgc-img": LocalJSX.FormBgcImg & JSXBase.HTMLAttributes<HTMLFormBgcImgElement>;
-            "form-component": LocalJSX.FormComponent & JSXBase.HTMLAttributes<HTMLFormComponentElement>;
             "form-wrapper": LocalJSX.FormWrapper & JSXBase.HTMLAttributes<HTMLFormWrapperElement>;
             "healt-card": LocalJSX.HealtCard & JSXBase.HTMLAttributes<HTMLHealtCardElement>;
             "house-card": LocalJSX.HouseCard & JSXBase.HTMLAttributes<HTMLHouseCardElement>;
