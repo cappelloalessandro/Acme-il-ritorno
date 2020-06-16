@@ -6,40 +6,51 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AssicurazioneVeicoli {
+    }
+    interface BannerApp {
+    }
+    interface BannerCertezze {
+    }
     interface BcgHeader {
     }
     interface BlobImg {
     }
-    interface CarCard {
-    }
-    interface ContenitoreFlex {
-    }
-    interface FormBgcImg {
-    }
-    interface FormComponent {
+    interface ContentFeatures {
     }
     interface FormWrapper {
     }
-    interface HealtCard {
-    }
-    interface HouseCard {
-    }
-    interface ImgService {
-    }
-    interface MoneyCard {
+    interface MiniCard {
+        "continua": string;
+        "spiegazione": string;
+        "titoletto": string;
     }
     interface NamedSlotParagraph {
     }
     interface SlotParagraph {
     }
-    interface TravelCard {
-    }
     interface TxtHeader {
-    }
-    interface UmbrellaCard {
     }
 }
 declare global {
+    interface HTMLAssicurazioneVeicoliElement extends Components.AssicurazioneVeicoli, HTMLStencilElement {
+    }
+    var HTMLAssicurazioneVeicoliElement: {
+        prototype: HTMLAssicurazioneVeicoliElement;
+        new (): HTMLAssicurazioneVeicoliElement;
+    };
+    interface HTMLBannerAppElement extends Components.BannerApp, HTMLStencilElement {
+    }
+    var HTMLBannerAppElement: {
+        prototype: HTMLBannerAppElement;
+        new (): HTMLBannerAppElement;
+    };
+    interface HTMLBannerCertezzeElement extends Components.BannerCertezze, HTMLStencilElement {
+    }
+    var HTMLBannerCertezzeElement: {
+        prototype: HTMLBannerCertezzeElement;
+        new (): HTMLBannerCertezzeElement;
+    };
     interface HTMLBcgHeaderElement extends Components.BcgHeader, HTMLStencilElement {
     }
     var HTMLBcgHeaderElement: {
@@ -52,29 +63,11 @@ declare global {
         prototype: HTMLBlobImgElement;
         new (): HTMLBlobImgElement;
     };
-    interface HTMLCarCardElement extends Components.CarCard, HTMLStencilElement {
+    interface HTMLContentFeaturesElement extends Components.ContentFeatures, HTMLStencilElement {
     }
-    var HTMLCarCardElement: {
-        prototype: HTMLCarCardElement;
-        new (): HTMLCarCardElement;
-    };
-    interface HTMLContenitoreFlexElement extends Components.ContenitoreFlex, HTMLStencilElement {
-    }
-    var HTMLContenitoreFlexElement: {
-        prototype: HTMLContenitoreFlexElement;
-        new (): HTMLContenitoreFlexElement;
-    };
-    interface HTMLFormBgcImgElement extends Components.FormBgcImg, HTMLStencilElement {
-    }
-    var HTMLFormBgcImgElement: {
-        prototype: HTMLFormBgcImgElement;
-        new (): HTMLFormBgcImgElement;
-    };
-    interface HTMLFormComponentElement extends Components.FormComponent, HTMLStencilElement {
-    }
-    var HTMLFormComponentElement: {
-        prototype: HTMLFormComponentElement;
-        new (): HTMLFormComponentElement;
+    var HTMLContentFeaturesElement: {
+        prototype: HTMLContentFeaturesElement;
+        new (): HTMLContentFeaturesElement;
     };
     interface HTMLFormWrapperElement extends Components.FormWrapper, HTMLStencilElement {
     }
@@ -82,29 +75,11 @@ declare global {
         prototype: HTMLFormWrapperElement;
         new (): HTMLFormWrapperElement;
     };
-    interface HTMLHealtCardElement extends Components.HealtCard, HTMLStencilElement {
+    interface HTMLMiniCardElement extends Components.MiniCard, HTMLStencilElement {
     }
-    var HTMLHealtCardElement: {
-        prototype: HTMLHealtCardElement;
-        new (): HTMLHealtCardElement;
-    };
-    interface HTMLHouseCardElement extends Components.HouseCard, HTMLStencilElement {
-    }
-    var HTMLHouseCardElement: {
-        prototype: HTMLHouseCardElement;
-        new (): HTMLHouseCardElement;
-    };
-    interface HTMLImgServiceElement extends Components.ImgService, HTMLStencilElement {
-    }
-    var HTMLImgServiceElement: {
-        prototype: HTMLImgServiceElement;
-        new (): HTMLImgServiceElement;
-    };
-    interface HTMLMoneyCardElement extends Components.MoneyCard, HTMLStencilElement {
-    }
-    var HTMLMoneyCardElement: {
-        prototype: HTMLMoneyCardElement;
-        new (): HTMLMoneyCardElement;
+    var HTMLMiniCardElement: {
+        prototype: HTMLMiniCardElement;
+        new (): HTMLMiniCardElement;
     };
     interface HTMLNamedSlotParagraphElement extends Components.NamedSlotParagraph, HTMLStencilElement {
     }
@@ -118,115 +93,81 @@ declare global {
         prototype: HTMLSlotParagraphElement;
         new (): HTMLSlotParagraphElement;
     };
-    interface HTMLTravelCardElement extends Components.TravelCard, HTMLStencilElement {
-    }
-    var HTMLTravelCardElement: {
-        prototype: HTMLTravelCardElement;
-        new (): HTMLTravelCardElement;
-    };
     interface HTMLTxtHeaderElement extends Components.TxtHeader, HTMLStencilElement {
     }
     var HTMLTxtHeaderElement: {
         prototype: HTMLTxtHeaderElement;
         new (): HTMLTxtHeaderElement;
     };
-    interface HTMLUmbrellaCardElement extends Components.UmbrellaCard, HTMLStencilElement {
-    }
-    var HTMLUmbrellaCardElement: {
-        prototype: HTMLUmbrellaCardElement;
-        new (): HTMLUmbrellaCardElement;
-    };
     interface HTMLElementTagNameMap {
+        "assicurazione-veicoli": HTMLAssicurazioneVeicoliElement;
+        "banner-app": HTMLBannerAppElement;
+        "banner-certezze": HTMLBannerCertezzeElement;
         "bcg-header": HTMLBcgHeaderElement;
         "blob-img": HTMLBlobImgElement;
-        "car-card": HTMLCarCardElement;
-        "contenitore-flex": HTMLContenitoreFlexElement;
-        "form-bgc-img": HTMLFormBgcImgElement;
-        "form-component": HTMLFormComponentElement;
+        "content-features": HTMLContentFeaturesElement;
         "form-wrapper": HTMLFormWrapperElement;
-        "healt-card": HTMLHealtCardElement;
-        "house-card": HTMLHouseCardElement;
-        "img-service": HTMLImgServiceElement;
-        "money-card": HTMLMoneyCardElement;
+        "mini-card": HTMLMiniCardElement;
         "named-slot-paragraph": HTMLNamedSlotParagraphElement;
         "slot-paragraph": HTMLSlotParagraphElement;
-        "travel-card": HTMLTravelCardElement;
         "txt-header": HTMLTxtHeaderElement;
-        "umbrella-card": HTMLUmbrellaCardElement;
     }
 }
 declare namespace LocalJSX {
+    interface AssicurazioneVeicoli {
+    }
+    interface BannerApp {
+    }
+    interface BannerCertezze {
+    }
     interface BcgHeader {
     }
     interface BlobImg {
     }
-    interface CarCard {
-    }
-    interface ContenitoreFlex {
-    }
-    interface FormBgcImg {
-    }
-    interface FormComponent {
+    interface ContentFeatures {
     }
     interface FormWrapper {
     }
-    interface HealtCard {
-    }
-    interface HouseCard {
-    }
-    interface ImgService {
-    }
-    interface MoneyCard {
+    interface MiniCard {
+        "continua"?: string;
+        "spiegazione"?: string;
+        "titoletto"?: string;
     }
     interface NamedSlotParagraph {
     }
     interface SlotParagraph {
     }
-    interface TravelCard {
-    }
     interface TxtHeader {
     }
-    interface UmbrellaCard {
-    }
     interface IntrinsicElements {
+        "assicurazione-veicoli": AssicurazioneVeicoli;
+        "banner-app": BannerApp;
+        "banner-certezze": BannerCertezze;
         "bcg-header": BcgHeader;
         "blob-img": BlobImg;
-        "car-card": CarCard;
-        "contenitore-flex": ContenitoreFlex;
-        "form-bgc-img": FormBgcImg;
-        "form-component": FormComponent;
+        "content-features": ContentFeatures;
         "form-wrapper": FormWrapper;
-        "healt-card": HealtCard;
-        "house-card": HouseCard;
-        "img-service": ImgService;
-        "money-card": MoneyCard;
+        "mini-card": MiniCard;
         "named-slot-paragraph": NamedSlotParagraph;
         "slot-paragraph": SlotParagraph;
-        "travel-card": TravelCard;
         "txt-header": TxtHeader;
-        "umbrella-card": UmbrellaCard;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "assicurazione-veicoli": LocalJSX.AssicurazioneVeicoli & JSXBase.HTMLAttributes<HTMLAssicurazioneVeicoliElement>;
+            "banner-app": LocalJSX.BannerApp & JSXBase.HTMLAttributes<HTMLBannerAppElement>;
+            "banner-certezze": LocalJSX.BannerCertezze & JSXBase.HTMLAttributes<HTMLBannerCertezzeElement>;
             "bcg-header": LocalJSX.BcgHeader & JSXBase.HTMLAttributes<HTMLBcgHeaderElement>;
             "blob-img": LocalJSX.BlobImg & JSXBase.HTMLAttributes<HTMLBlobImgElement>;
-            "car-card": LocalJSX.CarCard & JSXBase.HTMLAttributes<HTMLCarCardElement>;
-            "contenitore-flex": LocalJSX.ContenitoreFlex & JSXBase.HTMLAttributes<HTMLContenitoreFlexElement>;
-            "form-bgc-img": LocalJSX.FormBgcImg & JSXBase.HTMLAttributes<HTMLFormBgcImgElement>;
-            "form-component": LocalJSX.FormComponent & JSXBase.HTMLAttributes<HTMLFormComponentElement>;
+            "content-features": LocalJSX.ContentFeatures & JSXBase.HTMLAttributes<HTMLContentFeaturesElement>;
             "form-wrapper": LocalJSX.FormWrapper & JSXBase.HTMLAttributes<HTMLFormWrapperElement>;
-            "healt-card": LocalJSX.HealtCard & JSXBase.HTMLAttributes<HTMLHealtCardElement>;
-            "house-card": LocalJSX.HouseCard & JSXBase.HTMLAttributes<HTMLHouseCardElement>;
-            "img-service": LocalJSX.ImgService & JSXBase.HTMLAttributes<HTMLImgServiceElement>;
-            "money-card": LocalJSX.MoneyCard & JSXBase.HTMLAttributes<HTMLMoneyCardElement>;
+            "mini-card": LocalJSX.MiniCard & JSXBase.HTMLAttributes<HTMLMiniCardElement>;
             "named-slot-paragraph": LocalJSX.NamedSlotParagraph & JSXBase.HTMLAttributes<HTMLNamedSlotParagraphElement>;
             "slot-paragraph": LocalJSX.SlotParagraph & JSXBase.HTMLAttributes<HTMLSlotParagraphElement>;
-            "travel-card": LocalJSX.TravelCard & JSXBase.HTMLAttributes<HTMLTravelCardElement>;
             "txt-header": LocalJSX.TxtHeader & JSXBase.HTMLAttributes<HTMLTxtHeaderElement>;
-            "umbrella-card": LocalJSX.UmbrellaCard & JSXBase.HTMLAttributes<HTMLUmbrellaCardElement>;
         }
     }
 }

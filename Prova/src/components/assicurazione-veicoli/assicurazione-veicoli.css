@@ -1,0 +1,19 @@
+.grid{
+  display: grid;
+  margin-top: 300px;
+}
+
+.col-2{
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+}
+h3{
+  font-size:32px;
+}
+h5{
+  font-size: 24px;
+  color: gray;
+}
+input{
+  padding: 25px;
+}
