@@ -3,14 +3,13 @@
 }
 .grid{
   display: grid;
-  margin-top: 300px;
   width: 80%;
 }
 
 .col-4{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 20px;
-  margin: 0 auto;
+  margin: 150px auto;
   text-align: center;
   padding: 15px;
 }

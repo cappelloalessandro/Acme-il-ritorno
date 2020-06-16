@@ -1,3 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+.flex{
+  display: flex;
+}
+
+
 .grid{
   display: grid;
   margin-top: 300px;
@@ -11,9 +21,23 @@ h3{
   font-size:32px;
 }
 h5{
+  padding: 25px 0;
   font-size: 24px;
   color: gray;
+  text-transform: capitalize;
 }
+
 input{
-  padding: 25px;
+  display: inline-block;
+  padding: 25px 40px;
+}
+
+.car{
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.titol{
+  padding-left: 150px;
+
 }

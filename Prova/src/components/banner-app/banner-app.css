@@ -14,7 +14,7 @@ img{
 }
 .grid{
   display: grid;
-  margin-top: 300px;
+  margin-top: 150px;
   width: 100%;
 }
 .col-2{ 
