@@ -18,6 +18,8 @@ export namespace Components {
     }
     interface ContenitoreFlex {
     }
+    interface FetchArticoli {
+    }
     interface FormWrapper {
     }
     interface HealtCard {
@@ -77,6 +79,12 @@ declare global {
     var HTMLContenitoreFlexElement: {
         prototype: HTMLContenitoreFlexElement;
         new (): HTMLContenitoreFlexElement;
+    };
+    interface HTMLFetchArticoliElement extends Components.FetchArticoli, HTMLStencilElement {
+    }
+    var HTMLFetchArticoliElement: {
+        prototype: HTMLFetchArticoliElement;
+        new (): HTMLFetchArticoliElement;
     };
     interface HTMLFormWrapperElement extends Components.FormWrapper, HTMLStencilElement {
     }
@@ -151,6 +159,7 @@ declare global {
         "car-card": HTMLCarCardElement;
         "contact-form": HTMLContactFormElement;
         "contenitore-flex": HTMLContenitoreFlexElement;
+        "fetch-articoli": HTMLFetchArticoliElement;
         "form-wrapper": HTMLFormWrapperElement;
         "healt-card": HTMLHealtCardElement;
         "house-card": HTMLHouseCardElement;
@@ -176,6 +185,8 @@ declare namespace LocalJSX {
     interface ContactForm {
     }
     interface ContenitoreFlex {
+    }
+    interface FetchArticoli {
     }
     interface FormWrapper {
     }
@@ -206,6 +217,7 @@ declare namespace LocalJSX {
         "car-card": CarCard;
         "contact-form": ContactForm;
         "contenitore-flex": ContenitoreFlex;
+        "fetch-articoli": FetchArticoli;
         "form-wrapper": FormWrapper;
         "healt-card": HealtCard;
         "house-card": HouseCard;
@@ -229,6 +241,7 @@ declare module "@stencil/core" {
             "car-card": LocalJSX.CarCard & JSXBase.HTMLAttributes<HTMLCarCardElement>;
             "contact-form": LocalJSX.ContactForm & JSXBase.HTMLAttributes<HTMLContactFormElement>;
             "contenitore-flex": LocalJSX.ContenitoreFlex & JSXBase.HTMLAttributes<HTMLContenitoreFlexElement>;
+            "fetch-articoli": LocalJSX.FetchArticoli & JSXBase.HTMLAttributes<HTMLFetchArticoliElement>;
             "form-wrapper": LocalJSX.FormWrapper & JSXBase.HTMLAttributes<HTMLFormWrapperElement>;
             "healt-card": LocalJSX.HealtCard & JSXBase.HTMLAttributes<HTMLHealtCardElement>;
             "house-card": LocalJSX.HouseCard & JSXBase.HTMLAttributes<HTMLHouseCardElement>;
