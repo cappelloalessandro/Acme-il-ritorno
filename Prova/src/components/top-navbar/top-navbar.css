@@ -1,14 +1,4 @@
-.wrapper{
-  display: grid;
-  padding: 15px;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10px;
-}
 
-.flex{
-  display: flex;
-  text-align: center;
-}
 .logo img{
   width: 168px;
   height: 58px;
@@ -16,6 +6,9 @@
 }
 .logo img:hover{
   opacity: 0.8;
+}
+.flex{
+  display: flex;
 }
 nav ul{
   justify-content: space-around;
@@ -33,4 +26,13 @@ nav ul li a:hover{
   box-sizing: border-box;
   border: 0;
   border-bottom: 2px solid #02336E;
+}
+@media(min-width:800px){
+  .wrapper{
+    display: grid;
+    padding: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+  
 }

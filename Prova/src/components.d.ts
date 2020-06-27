@@ -10,6 +10,8 @@ export namespace Components {
     }
     interface BlobImg {
     }
+    interface BottomFooter {
+    }
     interface CarCard {
     }
     interface ContactForm {
@@ -51,6 +53,12 @@ declare global {
     var HTMLBlobImgElement: {
         prototype: HTMLBlobImgElement;
         new (): HTMLBlobImgElement;
+    };
+    interface HTMLBottomFooterElement extends Components.BottomFooter, HTMLStencilElement {
+    }
+    var HTMLBottomFooterElement: {
+        prototype: HTMLBottomFooterElement;
+        new (): HTMLBottomFooterElement;
     };
     interface HTMLCarCardElement extends Components.CarCard, HTMLStencilElement {
     }
@@ -139,6 +147,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "bcg-header": HTMLBcgHeaderElement;
         "blob-img": HTMLBlobImgElement;
+        "bottom-footer": HTMLBottomFooterElement;
         "car-card": HTMLCarCardElement;
         "contact-form": HTMLContactFormElement;
         "contenitore-flex": HTMLContenitoreFlexElement;
@@ -159,6 +168,8 @@ declare namespace LocalJSX {
     interface BcgHeader {
     }
     interface BlobImg {
+    }
+    interface BottomFooter {
     }
     interface CarCard {
     }
@@ -191,6 +202,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "bcg-header": BcgHeader;
         "blob-img": BlobImg;
+        "bottom-footer": BottomFooter;
         "car-card": CarCard;
         "contact-form": ContactForm;
         "contenitore-flex": ContenitoreFlex;
@@ -213,6 +225,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "bcg-header": LocalJSX.BcgHeader & JSXBase.HTMLAttributes<HTMLBcgHeaderElement>;
             "blob-img": LocalJSX.BlobImg & JSXBase.HTMLAttributes<HTMLBlobImgElement>;
+            "bottom-footer": LocalJSX.BottomFooter & JSXBase.HTMLAttributes<HTMLBottomFooterElement>;
             "car-card": LocalJSX.CarCard & JSXBase.HTMLAttributes<HTMLCarCardElement>;
             "contact-form": LocalJSX.ContactForm & JSXBase.HTMLAttributes<HTMLContactFormElement>;
             "contenitore-flex": LocalJSX.ContenitoreFlex & JSXBase.HTMLAttributes<HTMLContenitoreFlexElement>;
