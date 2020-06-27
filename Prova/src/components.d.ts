@@ -30,6 +30,8 @@ export namespace Components {
     }
     interface SlotParagraph {
     }
+    interface TopNavbar {
+    }
     interface TravelCard {
     }
     interface TxtHeader {
@@ -110,6 +112,12 @@ declare global {
         prototype: HTMLSlotParagraphElement;
         new (): HTMLSlotParagraphElement;
     };
+    interface HTMLTopNavbarElement extends Components.TopNavbar, HTMLStencilElement {
+    }
+    var HTMLTopNavbarElement: {
+        prototype: HTMLTopNavbarElement;
+        new (): HTMLTopNavbarElement;
+    };
     interface HTMLTravelCardElement extends Components.TravelCard, HTMLStencilElement {
     }
     var HTMLTravelCardElement: {
@@ -141,6 +149,7 @@ declare global {
         "money-card": HTMLMoneyCardElement;
         "named-slot-paragraph": HTMLNamedSlotParagraphElement;
         "slot-paragraph": HTMLSlotParagraphElement;
+        "top-navbar": HTMLTopNavbarElement;
         "travel-card": HTMLTravelCardElement;
         "txt-header": HTMLTxtHeaderElement;
         "umbrella-card": HTMLUmbrellaCardElement;
@@ -171,6 +180,8 @@ declare namespace LocalJSX {
     }
     interface SlotParagraph {
     }
+    interface TopNavbar {
+    }
     interface TravelCard {
     }
     interface TxtHeader {
@@ -190,6 +201,7 @@ declare namespace LocalJSX {
         "money-card": MoneyCard;
         "named-slot-paragraph": NamedSlotParagraph;
         "slot-paragraph": SlotParagraph;
+        "top-navbar": TopNavbar;
         "travel-card": TravelCard;
         "txt-header": TxtHeader;
         "umbrella-card": UmbrellaCard;
@@ -211,6 +223,7 @@ declare module "@stencil/core" {
             "money-card": LocalJSX.MoneyCard & JSXBase.HTMLAttributes<HTMLMoneyCardElement>;
             "named-slot-paragraph": LocalJSX.NamedSlotParagraph & JSXBase.HTMLAttributes<HTMLNamedSlotParagraphElement>;
             "slot-paragraph": LocalJSX.SlotParagraph & JSXBase.HTMLAttributes<HTMLSlotParagraphElement>;
+            "top-navbar": LocalJSX.TopNavbar & JSXBase.HTMLAttributes<HTMLTopNavbarElement>;
             "travel-card": LocalJSX.TravelCard & JSXBase.HTMLAttributes<HTMLTravelCardElement>;
             "txt-header": LocalJSX.TxtHeader & JSXBase.HTMLAttributes<HTMLTxtHeaderElement>;
             "umbrella-card": LocalJSX.UmbrellaCard & JSXBase.HTMLAttributes<HTMLUmbrellaCardElement>;
