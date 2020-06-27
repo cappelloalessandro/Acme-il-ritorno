@@ -7,9 +7,11 @@
 .full-height{
   height: 10%;
 }
+footer{
+  background-image: linear-gradient(to left bottom,#09b1f9,#020215 );
+}
 footer .col{
   font-family: 'Poppins';
-  background-color: #02336E;
   color: #ffffff;
   padding: 20px;
 }
