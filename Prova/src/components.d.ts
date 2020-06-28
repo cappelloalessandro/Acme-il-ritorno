@@ -18,6 +18,8 @@ export namespace Components {
     }
     interface ContentFeatures {
     }
+    interface FetchSample {
+    }
     interface FormWrapper {
     }
     interface MiniCard {
@@ -69,6 +71,12 @@ declare global {
         prototype: HTMLContentFeaturesElement;
         new (): HTMLContentFeaturesElement;
     };
+    interface HTMLFetchSampleElement extends Components.FetchSample, HTMLStencilElement {
+    }
+    var HTMLFetchSampleElement: {
+        prototype: HTMLFetchSampleElement;
+        new (): HTMLFetchSampleElement;
+    };
     interface HTMLFormWrapperElement extends Components.FormWrapper, HTMLStencilElement {
     }
     var HTMLFormWrapperElement: {
@@ -106,6 +114,7 @@ declare global {
         "bcg-header": HTMLBcgHeaderElement;
         "blob-img": HTMLBlobImgElement;
         "content-features": HTMLContentFeaturesElement;
+        "fetch-sample": HTMLFetchSampleElement;
         "form-wrapper": HTMLFormWrapperElement;
         "mini-card": HTMLMiniCardElement;
         "named-slot-paragraph": HTMLNamedSlotParagraphElement;
@@ -125,6 +134,8 @@ declare namespace LocalJSX {
     interface BlobImg {
     }
     interface ContentFeatures {
+    }
+    interface FetchSample {
     }
     interface FormWrapper {
     }
@@ -146,6 +157,7 @@ declare namespace LocalJSX {
         "bcg-header": BcgHeader;
         "blob-img": BlobImg;
         "content-features": ContentFeatures;
+        "fetch-sample": FetchSample;
         "form-wrapper": FormWrapper;
         "mini-card": MiniCard;
         "named-slot-paragraph": NamedSlotParagraph;
@@ -163,6 +175,7 @@ declare module "@stencil/core" {
             "bcg-header": LocalJSX.BcgHeader & JSXBase.HTMLAttributes<HTMLBcgHeaderElement>;
             "blob-img": LocalJSX.BlobImg & JSXBase.HTMLAttributes<HTMLBlobImgElement>;
             "content-features": LocalJSX.ContentFeatures & JSXBase.HTMLAttributes<HTMLContentFeaturesElement>;
+            "fetch-sample": LocalJSX.FetchSample & JSXBase.HTMLAttributes<HTMLFetchSampleElement>;
             "form-wrapper": LocalJSX.FormWrapper & JSXBase.HTMLAttributes<HTMLFormWrapperElement>;
             "mini-card": LocalJSX.MiniCard & JSXBase.HTMLAttributes<HTMLMiniCardElement>;
             "named-slot-paragraph": LocalJSX.NamedSlotParagraph & JSXBase.HTMLAttributes<HTMLNamedSlotParagraphElement>;

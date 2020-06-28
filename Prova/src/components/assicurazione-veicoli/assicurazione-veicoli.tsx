@@ -2,7 +2,7 @@ import { Component, ComponentInterface, h, State } from '@stencil/core';
 
 @Component({
   tag: 'assicurazione-veicoli',
-  styleUrl: 'assicurazione-veicoli.css',
+  styleUrl: 'assicurazione-veicoli.scss',
   shadow: true,
   assetsDirs: ['assets']
 })
@@ -12,25 +12,53 @@ export class AssicurazioneVeicoli implements ComponentInterface {
     return (
       <div class="grid col-2">
         <div class="titol">
-          <h3>Assicura oggi la tua vettura</h3>
-          <h5>è questione di click!</h5>
-          {/* <img class="icona" src="/assets/car-insurance.png" alt="none"/> */}
-          <img onClick={() => this.changeImage('/assets/car-private.jpg')} id="car" src="/assets/car.png" alt="scooter"/>
-          <img onClick={() => this.changeImage('/assets/scooter.jpg')} id="scooter"src="/assets/scooter.png" alt="scooter"/>
-          <img onClick={() => this.changeImage('/assets/van-factory.jpg')} id="van" src="/assets/van.png" alt="scooter"/>
-          <input type="text" placeholder="Targa della tua vettura"></input>
+          <h3>Devi rinnovare l'Assicurazione della tua vettura?</h3>
+          <h5>questione di click!</h5>
+          <div class="selectVehicle targa">
+            <img src={this.iconActive} onClick={() => this.listOpened = !this.listOpened} alt="" />
+            {this.listOpened ? <div class="list">
+              <div class="list-item">
+                <img onClick={() => this.changeImage({ 
+                  icon: '/assets/car.png', image: '/assets/car-private.jpg' 
+                  })}
+                  id="car" src="/assets/white-car.png" alt="car" />
+                  {/* /> */}
+              </div>
+              <div class="list-item">
+                <img onClick={() => this.changeImage({ 
+                  icon: '/assets/scooter.png', image: '/assets/scooter.jpg' 
+                })}
+                  id="scooter" src="/assets/scooter.png" alt="scooter" />
+              </div>
+              <div class="list-item">
+                <img onClick={() => this.changeImage({ 
+                  icon: '/assets/van.png', image: '/assets/van-factory.jpg'
+                })}
+                  id="van" src="/assets/van.png" alt="van" />
+              </div>
+            </div> : null}
+            <input type="text" placeholder="Inserisci QUI la targa"/>
+            <button>Conferma!</button>
+            {/* <a class="btn" href="javascript:void(0)">Conferma!</a> */}
+          </div>
+          {/* <input type="text" placeholder="Targa della tua vettura"></input> */}
         </div>
         <div>
-          <img id="macchina" class="car"  src={this.imagePath} alt="car"/>
+          <img id="macchina" class="car" src={this.imagePath} alt="car" />
         </div>
       </div>
     );
   }
 
-  @State() imagePath = '/assets/car-private.jpg'
-    changeImage(path){
-      this.imagePath = path
-      // console.log("ciao")
-    }
-  
+  @State() imagePath: string = '/assets/car-private.jpg';
+  @State() iconActive: string = '/assets/car.png';
+  @State() listOpened: boolean = false
+
+
+  changeImage(path) {
+    this.imagePath = path.image
+    this.iconActive = path.icon
+    this.listOpened = false
+  }
+
 }

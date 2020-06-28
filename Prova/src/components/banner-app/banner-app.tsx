@@ -15,7 +15,7 @@ export class BannerApp implements ComponentInterface {
           <img src="/assets/telefono-app.png" alt=""/>
         </div>
         <div>
-          <h2>I tuoi documenti, in un unica app, comodamente nella tua tasca! </h2>
+          <h2>Le tue Assicurazioni, in un unica app, comodamente alla portata di click! </h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa laborum ducimus. Voluptatum nisi corporis deserunt nulla facere reprehenderit iure non id, accusamus quisquam aperiam distinctio totam obcaecati dicta ab?</p>
         </div>
       </div>
