@@ -1,0 +1,38 @@
+.wrapper{
+  margin-top: 30px;
+}
+.grid{
+  display: grid;
+}
+.full-height{
+  height: 10%;
+}
+footer{
+  background-image: linear-gradient(to left bottom,#09b1f9,#020215 );
+}
+footer .col{
+  font-family: 'Poppins';
+  color: #ffffff;
+  padding: 20px;
+}
+
+.social_icon img{
+  width: 50px;
+}
+.social_icon img:hover{
+  opacity: 0.6;
+  transition: all ease 0.5s;
+}
+.fb{
+  padding-right: 20px;
+}
+
+@media (min-width: 800px){
+  .col-3{
+      grid-template-rows: 1fr 1fr;
+     text-align: center;
+  }
+  footer.col-3{
+      column-gap: 0;
+  }
+}
