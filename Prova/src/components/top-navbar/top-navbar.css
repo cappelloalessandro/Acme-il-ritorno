@@ -1,0 +1,38 @@
+
+.logo img{
+  width: 168px;
+  height: 58px;
+  transition: all ease 0.5s;
+}
+.logo img:hover{
+  opacity: 0.8;
+}
+.flex{
+  display: flex;
+}
+nav ul{
+  justify-content: space-around;
+}
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  color: #02336E;
+  font-family: 'Poppins';
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul li a:hover{
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 2px solid #02336E;
+}
+@media(min-width:800px){
+  .wrapper{
+    display: grid;
+    padding: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
+  
+}
