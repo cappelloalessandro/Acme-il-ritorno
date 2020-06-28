@@ -13,19 +13,16 @@ export namespace Components {
     interface BannerCertezze {
     }
     interface BcgHeader {
-    interface BottomFooter {
-    }
-    interface CarCard {
-    }
-    interface ContactForm {
-    }
-    interface ContenitoreFlex {
-    }
-    interface FetchArticoli {
     }
     interface BlobImg {
     }
+    interface BottomFooter {
+    }
+    interface ContactForm {
+    }
     interface ContentFeatures {
+    }
+    interface FetchArticoli {
     }
     interface FetchSample {
     }
@@ -41,8 +38,6 @@ export namespace Components {
     interface SlotParagraph {
     }
     interface TopNavbar {
-    }
-    interface TravelCard {
     }
     interface TxtHeader {
     }
@@ -78,28 +73,11 @@ declare global {
         prototype: HTMLBlobImgElement;
         new (): HTMLBlobImgElement;
     };
-    interface HTMLContentFeaturesElement extends Components.ContentFeatures, HTMLStencilElement {
-    }
-    var HTMLContentFeaturesElement: {
-        prototype: HTMLContentFeaturesElement;
-        new (): HTMLContentFeaturesElement;
-    };
-    interface HTMLFetchSampleElement extends Components.FetchSample, HTMLStencilElement {
-    }
-    var HTMLFetchSampleElement: {
-        prototype: HTMLFetchSampleElement;
-        new (): HTMLFetchSampleElement;
     interface HTMLBottomFooterElement extends Components.BottomFooter, HTMLStencilElement {
     }
     var HTMLBottomFooterElement: {
         prototype: HTMLBottomFooterElement;
         new (): HTMLBottomFooterElement;
-    };
-    interface HTMLCarCardElement extends Components.CarCard, HTMLStencilElement {
-    }
-    var HTMLCarCardElement: {
-        prototype: HTMLCarCardElement;
-        new (): HTMLCarCardElement;
     };
     interface HTMLContactFormElement extends Components.ContactForm, HTMLStencilElement {
     }
@@ -107,17 +85,23 @@ declare global {
         prototype: HTMLContactFormElement;
         new (): HTMLContactFormElement;
     };
-    interface HTMLContenitoreFlexElement extends Components.ContenitoreFlex, HTMLStencilElement {
+    interface HTMLContentFeaturesElement extends Components.ContentFeatures, HTMLStencilElement {
     }
-    var HTMLContenitoreFlexElement: {
-        prototype: HTMLContenitoreFlexElement;
-        new (): HTMLContenitoreFlexElement;
+    var HTMLContentFeaturesElement: {
+        prototype: HTMLContentFeaturesElement;
+        new (): HTMLContentFeaturesElement;
     };
     interface HTMLFetchArticoliElement extends Components.FetchArticoli, HTMLStencilElement {
     }
     var HTMLFetchArticoliElement: {
         prototype: HTMLFetchArticoliElement;
         new (): HTMLFetchArticoliElement;
+    };
+    interface HTMLFetchSampleElement extends Components.FetchSample, HTMLStencilElement {
+    }
+    var HTMLFetchSampleElement: {
+        prototype: HTMLFetchSampleElement;
+        new (): HTMLFetchSampleElement;
     };
     interface HTMLFormWrapperElement extends Components.FormWrapper, HTMLStencilElement {
     }
@@ -149,12 +133,6 @@ declare global {
         prototype: HTMLTopNavbarElement;
         new (): HTMLTopNavbarElement;
     };
-    interface HTMLTravelCardElement extends Components.TravelCard, HTMLStencilElement {
-    }
-    var HTMLTravelCardElement: {
-        prototype: HTMLTravelCardElement;
-        new (): HTMLTravelCardElement;
-    };
     interface HTMLTxtHeaderElement extends Components.TxtHeader, HTMLStencilElement {
     }
     var HTMLTxtHeaderElement: {
@@ -167,13 +145,11 @@ declare global {
         "banner-certezze": HTMLBannerCertezzeElement;
         "bcg-header": HTMLBcgHeaderElement;
         "blob-img": HTMLBlobImgElement;
-        "content-features": HTMLContentFeaturesElement;
-        "fetch-sample": HTMLFetchSampleElement;
         "bottom-footer": HTMLBottomFooterElement;
-        "car-card": HTMLCarCardElement;
         "contact-form": HTMLContactFormElement;
-        "contenitore-flex": HTMLContenitoreFlexElement;
+        "content-features": HTMLContentFeaturesElement;
         "fetch-articoli": HTMLFetchArticoliElement;
+        "fetch-sample": HTMLFetchSampleElement;
         "form-wrapper": HTMLFormWrapperElement;
         "mini-card": HTMLMiniCardElement;
         "named-slot-paragraph": HTMLNamedSlotParagraphElement;
@@ -190,19 +166,16 @@ declare namespace LocalJSX {
     interface BannerCertezze {
     }
     interface BcgHeader {
-    interface BottomFooter {
-    }
-    interface CarCard {
-    }
-    interface ContactForm {
-    }
-    interface ContenitoreFlex {
-    }
-    interface FetchArticoli {
     }
     interface BlobImg {
     }
+    interface BottomFooter {
+    }
+    interface ContactForm {
+    }
     interface ContentFeatures {
+    }
+    interface FetchArticoli {
     }
     interface FetchSample {
     }
@@ -219,8 +192,6 @@ declare namespace LocalJSX {
     }
     interface TopNavbar {
     }
-    interface TravelCard {
-    }
     interface TxtHeader {
     }
     interface IntrinsicElements {
@@ -229,19 +200,16 @@ declare namespace LocalJSX {
         "banner-certezze": BannerCertezze;
         "bcg-header": BcgHeader;
         "blob-img": BlobImg;
-        "content-features": ContentFeatures;
-        "fetch-sample": FetchSample;
         "bottom-footer": BottomFooter;
-        "car-card": CarCard;
         "contact-form": ContactForm;
-        "contenitore-flex": ContenitoreFlex;
+        "content-features": ContentFeatures;
         "fetch-articoli": FetchArticoli;
+        "fetch-sample": FetchSample;
         "form-wrapper": FormWrapper;
         "mini-card": MiniCard;
         "named-slot-paragraph": NamedSlotParagraph;
         "slot-paragraph": SlotParagraph;
         "top-navbar": TopNavbar;
-        "travel-card": TravelCard;
         "txt-header": TxtHeader;
     }
 }
@@ -254,19 +222,16 @@ declare module "@stencil/core" {
             "banner-certezze": LocalJSX.BannerCertezze & JSXBase.HTMLAttributes<HTMLBannerCertezzeElement>;
             "bcg-header": LocalJSX.BcgHeader & JSXBase.HTMLAttributes<HTMLBcgHeaderElement>;
             "blob-img": LocalJSX.BlobImg & JSXBase.HTMLAttributes<HTMLBlobImgElement>;
-            "content-features": LocalJSX.ContentFeatures & JSXBase.HTMLAttributes<HTMLContentFeaturesElement>;
-            "fetch-sample": LocalJSX.FetchSample & JSXBase.HTMLAttributes<HTMLFetchSampleElement>;
             "bottom-footer": LocalJSX.BottomFooter & JSXBase.HTMLAttributes<HTMLBottomFooterElement>;
-            "car-card": LocalJSX.CarCard & JSXBase.HTMLAttributes<HTMLCarCardElement>;
             "contact-form": LocalJSX.ContactForm & JSXBase.HTMLAttributes<HTMLContactFormElement>;
-            "contenitore-flex": LocalJSX.ContenitoreFlex & JSXBase.HTMLAttributes<HTMLContenitoreFlexElement>;
+            "content-features": LocalJSX.ContentFeatures & JSXBase.HTMLAttributes<HTMLContentFeaturesElement>;
             "fetch-articoli": LocalJSX.FetchArticoli & JSXBase.HTMLAttributes<HTMLFetchArticoliElement>;
+            "fetch-sample": LocalJSX.FetchSample & JSXBase.HTMLAttributes<HTMLFetchSampleElement>;
             "form-wrapper": LocalJSX.FormWrapper & JSXBase.HTMLAttributes<HTMLFormWrapperElement>;
             "mini-card": LocalJSX.MiniCard & JSXBase.HTMLAttributes<HTMLMiniCardElement>;
             "named-slot-paragraph": LocalJSX.NamedSlotParagraph & JSXBase.HTMLAttributes<HTMLNamedSlotParagraphElement>;
             "slot-paragraph": LocalJSX.SlotParagraph & JSXBase.HTMLAttributes<HTMLSlotParagraphElement>;
             "top-navbar": LocalJSX.TopNavbar & JSXBase.HTMLAttributes<HTMLTopNavbarElement>;
-            "travel-card": LocalJSX.TravelCard & JSXBase.HTMLAttributes<HTMLTravelCardElement>;
             "txt-header": LocalJSX.TxtHeader & JSXBase.HTMLAttributes<HTMLTxtHeaderElement>;
         }
     }
