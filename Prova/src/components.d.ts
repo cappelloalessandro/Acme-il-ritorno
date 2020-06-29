@@ -28,9 +28,7 @@ export namespace Components {
     }
     interface FormWrapper {
     }
-    interface NamedSlotParagraph {
-    }
-    interface SlotParagraph {
+    interface HeaderEffetto {
     }
     interface TopNavbar {
     }
@@ -104,17 +102,11 @@ declare global {
         prototype: HTMLFormWrapperElement;
         new (): HTMLFormWrapperElement;
     };
-    interface HTMLNamedSlotParagraphElement extends Components.NamedSlotParagraph, HTMLStencilElement {
+    interface HTMLHeaderEffettoElement extends Components.HeaderEffetto, HTMLStencilElement {
     }
-    var HTMLNamedSlotParagraphElement: {
-        prototype: HTMLNamedSlotParagraphElement;
-        new (): HTMLNamedSlotParagraphElement;
-    };
-    interface HTMLSlotParagraphElement extends Components.SlotParagraph, HTMLStencilElement {
-    }
-    var HTMLSlotParagraphElement: {
-        prototype: HTMLSlotParagraphElement;
-        new (): HTMLSlotParagraphElement;
+    var HTMLHeaderEffettoElement: {
+        prototype: HTMLHeaderEffettoElement;
+        new (): HTMLHeaderEffettoElement;
     };
     interface HTMLTopNavbarElement extends Components.TopNavbar, HTMLStencilElement {
     }
@@ -140,8 +132,7 @@ declare global {
         "fetch-sample": HTMLFetchSampleElement;
         "first-content": HTMLFirstContentElement;
         "form-wrapper": HTMLFormWrapperElement;
-        "named-slot-paragraph": HTMLNamedSlotParagraphElement;
-        "slot-paragraph": HTMLSlotParagraphElement;
+        "header-effetto": HTMLHeaderEffettoElement;
         "top-navbar": HTMLTopNavbarElement;
         "txt-header": HTMLTxtHeaderElement;
     }
@@ -169,9 +160,7 @@ declare namespace LocalJSX {
     }
     interface FormWrapper {
     }
-    interface NamedSlotParagraph {
-    }
-    interface SlotParagraph {
+    interface HeaderEffetto {
     }
     interface TopNavbar {
     }
@@ -189,8 +178,7 @@ declare namespace LocalJSX {
         "fetch-sample": FetchSample;
         "first-content": FirstContent;
         "form-wrapper": FormWrapper;
-        "named-slot-paragraph": NamedSlotParagraph;
-        "slot-paragraph": SlotParagraph;
+        "header-effetto": HeaderEffetto;
         "top-navbar": TopNavbar;
         "txt-header": TxtHeader;
     }
@@ -210,8 +198,7 @@ declare module "@stencil/core" {
             "fetch-sample": LocalJSX.FetchSample & JSXBase.HTMLAttributes<HTMLFetchSampleElement>;
             "first-content": LocalJSX.FirstContent & JSXBase.HTMLAttributes<HTMLFirstContentElement>;
             "form-wrapper": LocalJSX.FormWrapper & JSXBase.HTMLAttributes<HTMLFormWrapperElement>;
-            "named-slot-paragraph": LocalJSX.NamedSlotParagraph & JSXBase.HTMLAttributes<HTMLNamedSlotParagraphElement>;
-            "slot-paragraph": LocalJSX.SlotParagraph & JSXBase.HTMLAttributes<HTMLSlotParagraphElement>;
+            "header-effetto": LocalJSX.HeaderEffetto & JSXBase.HTMLAttributes<HTMLHeaderEffettoElement>;
             "top-navbar": LocalJSX.TopNavbar & JSXBase.HTMLAttributes<HTMLTopNavbarElement>;
             "txt-header": LocalJSX.TxtHeader & JSXBase.HTMLAttributes<HTMLTxtHeaderElement>;
         }

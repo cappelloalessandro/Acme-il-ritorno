@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,KAAK;CACf;;AAED,AAAA,CAAC,CAAA;EAEC,KAAK,EAAE,IAAI;CACZ",
-    "sources": [
-        "slot-paragraph.scss"
-    ],
-    "names": [],
-    "file": "slot-paragraph.css"
-}
