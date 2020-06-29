@@ -20,18 +20,13 @@ export namespace Components {
     }
     interface ContactForm {
     }
-    interface ContentFeatures {
-    }
     interface FetchArticoli {
     }
     interface FetchSample {
     }
-    interface FormWrapper {
+    interface FirstContent {
     }
-    interface MiniCard {
-        "continua": string;
-        "spiegazione": string;
-        "titoletto": string;
+    interface FormWrapper {
     }
     interface NamedSlotParagraph {
     }
@@ -85,12 +80,6 @@ declare global {
         prototype: HTMLContactFormElement;
         new (): HTMLContactFormElement;
     };
-    interface HTMLContentFeaturesElement extends Components.ContentFeatures, HTMLStencilElement {
-    }
-    var HTMLContentFeaturesElement: {
-        prototype: HTMLContentFeaturesElement;
-        new (): HTMLContentFeaturesElement;
-    };
     interface HTMLFetchArticoliElement extends Components.FetchArticoli, HTMLStencilElement {
     }
     var HTMLFetchArticoliElement: {
@@ -103,17 +92,17 @@ declare global {
         prototype: HTMLFetchSampleElement;
         new (): HTMLFetchSampleElement;
     };
+    interface HTMLFirstContentElement extends Components.FirstContent, HTMLStencilElement {
+    }
+    var HTMLFirstContentElement: {
+        prototype: HTMLFirstContentElement;
+        new (): HTMLFirstContentElement;
+    };
     interface HTMLFormWrapperElement extends Components.FormWrapper, HTMLStencilElement {
     }
     var HTMLFormWrapperElement: {
         prototype: HTMLFormWrapperElement;
         new (): HTMLFormWrapperElement;
-    };
-    interface HTMLMiniCardElement extends Components.MiniCard, HTMLStencilElement {
-    }
-    var HTMLMiniCardElement: {
-        prototype: HTMLMiniCardElement;
-        new (): HTMLMiniCardElement;
     };
     interface HTMLNamedSlotParagraphElement extends Components.NamedSlotParagraph, HTMLStencilElement {
     }
@@ -147,11 +136,10 @@ declare global {
         "blob-img": HTMLBlobImgElement;
         "bottom-footer": HTMLBottomFooterElement;
         "contact-form": HTMLContactFormElement;
-        "content-features": HTMLContentFeaturesElement;
         "fetch-articoli": HTMLFetchArticoliElement;
         "fetch-sample": HTMLFetchSampleElement;
+        "first-content": HTMLFirstContentElement;
         "form-wrapper": HTMLFormWrapperElement;
-        "mini-card": HTMLMiniCardElement;
         "named-slot-paragraph": HTMLNamedSlotParagraphElement;
         "slot-paragraph": HTMLSlotParagraphElement;
         "top-navbar": HTMLTopNavbarElement;
@@ -173,18 +161,13 @@ declare namespace LocalJSX {
     }
     interface ContactForm {
     }
-    interface ContentFeatures {
-    }
     interface FetchArticoli {
     }
     interface FetchSample {
     }
-    interface FormWrapper {
+    interface FirstContent {
     }
-    interface MiniCard {
-        "continua"?: string;
-        "spiegazione"?: string;
-        "titoletto"?: string;
+    interface FormWrapper {
     }
     interface NamedSlotParagraph {
     }
@@ -202,11 +185,10 @@ declare namespace LocalJSX {
         "blob-img": BlobImg;
         "bottom-footer": BottomFooter;
         "contact-form": ContactForm;
-        "content-features": ContentFeatures;
         "fetch-articoli": FetchArticoli;
         "fetch-sample": FetchSample;
+        "first-content": FirstContent;
         "form-wrapper": FormWrapper;
-        "mini-card": MiniCard;
         "named-slot-paragraph": NamedSlotParagraph;
         "slot-paragraph": SlotParagraph;
         "top-navbar": TopNavbar;
@@ -224,11 +206,10 @@ declare module "@stencil/core" {
             "blob-img": LocalJSX.BlobImg & JSXBase.HTMLAttributes<HTMLBlobImgElement>;
             "bottom-footer": LocalJSX.BottomFooter & JSXBase.HTMLAttributes<HTMLBottomFooterElement>;
             "contact-form": LocalJSX.ContactForm & JSXBase.HTMLAttributes<HTMLContactFormElement>;
-            "content-features": LocalJSX.ContentFeatures & JSXBase.HTMLAttributes<HTMLContentFeaturesElement>;
             "fetch-articoli": LocalJSX.FetchArticoli & JSXBase.HTMLAttributes<HTMLFetchArticoliElement>;
             "fetch-sample": LocalJSX.FetchSample & JSXBase.HTMLAttributes<HTMLFetchSampleElement>;
+            "first-content": LocalJSX.FirstContent & JSXBase.HTMLAttributes<HTMLFirstContentElement>;
             "form-wrapper": LocalJSX.FormWrapper & JSXBase.HTMLAttributes<HTMLFormWrapperElement>;
-            "mini-card": LocalJSX.MiniCard & JSXBase.HTMLAttributes<HTMLMiniCardElement>;
             "named-slot-paragraph": LocalJSX.NamedSlotParagraph & JSXBase.HTMLAttributes<HTMLNamedSlotParagraphElement>;
             "slot-paragraph": LocalJSX.SlotParagraph & JSXBase.HTMLAttributes<HTMLSlotParagraphElement>;
             "top-navbar": LocalJSX.TopNavbar & JSXBase.HTMLAttributes<HTMLTopNavbarElement>;

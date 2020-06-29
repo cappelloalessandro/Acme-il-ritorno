@@ -11,7 +11,7 @@ export class AssicurazioneVeicoli implements ComponentInterface {
   render() {
     return (
       <div class="grid col-2">
-        <div class="titol">
+        <div class="select">
           <h3>Devi rinnovare l'Assicurazione della tua vettura?</h3>
           <h5>questione di click!</h5>
           <div class="selectVehicle targa">
@@ -28,13 +28,13 @@ export class AssicurazioneVeicoli implements ComponentInterface {
                 <img onClick={() => this.changeImage({ 
                   icon: '/assets/scooter.png', image: '/assets/scooter.jpg' 
                 })}
-                  id="scooter" src="/assets/scooter.png" alt="scooter" />
+                  id="scooter" src="/assets/white-scooter.png" alt="scooter" />
               </div>
               <div class="list-item">
                 <img onClick={() => this.changeImage({ 
                   icon: '/assets/van.png', image: '/assets/van-factory.jpg'
                 })}
-                  id="van" src="/assets/van.png" alt="van" />
+                  id="van" src="/assets/white-van.png" alt="van" />
               </div>
             </div> : null}
             <input type="text" placeholder="Inserisci QUI la targa"/>
