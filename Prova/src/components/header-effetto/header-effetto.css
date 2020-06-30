@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+span{
+  color: #02336E;
+  text-decoration: underline;
+}
+article{
+  background-image: url(assets/acme-people-blue.jpg);
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.opacity {
+  backdrop-filter: opacity(1.4);
+}
+h3{
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+p{
+  /* padding-top: 50px; */
+  padding-left: 50px;
+  color: #fff;
+  margin-top: 10px;
+}
+a{
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 10px 0 0 50px;
+  text-decoration: none;
+  background-image: linear-gradient(to right bottom,#11A5E6,#02336E);
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+a:hover{
+  opacity: 0.8;
+}
+@media (max-width: 880px){
+  article{
+    height: 300px;
+    text-align: left;
+  }
+  h3{
+    margin-top: 30px;
+  }
+}
+@media (max-width: 550px){
+  article{
+    height: 350px;
+    text-align: left;
+  }
+}

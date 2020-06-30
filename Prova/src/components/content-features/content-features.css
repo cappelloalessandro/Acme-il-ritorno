@@ -58,3 +58,52 @@ h4{
   letter-spacing: 1px;
   font-size: 14px;
 }
+<<<<<<< Updated upstream:Prova/src/components/content-features/content-features.css
+=======
+p{
+  font-size: 14px;
+  /* color: #4d4d4d; */
+  color: white;
+  padding: 10px 15px;
+}
+.card{
+  color: #4d4d4d;
+}
+article{
+  background-color:#f2f2f2;
+  border-radius: 25px;
+}
+a{
+  color: #02336E;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 15px 5px;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+a:hover{
+  color: #11A5E6;
+  transition: 0.6s;
+}
+@media (max-width: 1001px){
+  .grid{
+    display: block;
+    justify-content: right;
+  }
+  .card{
+    display: none;
+  }
+  article{
+    margin-top: -150px;
+    margin-bottom: 160px;
+    display: flex;
+    width: 50%;
+  }
+  h3, a{
+    padding-top: 40px;
+  }
+}
+@media (max-width: 550px){
+}
+>>>>>>> Stashed changes:Prova/src/components/first-content/first-content.css

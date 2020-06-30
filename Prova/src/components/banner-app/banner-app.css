@@ -35,3 +35,46 @@ p{
   text-align: left;
   padding: 0 100px 0 0;
 }
+a{
+  display: inline-block;
+  padding: 10px 15px;
+  /* margin: 10px 0 0 50px; */ 
+  text-decoration: none;
+  /* background-image: linear-gradient(to right bottom,#11A5E6,#02336E); */
+  background-color: #fff;
+  color: #02336E;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+a:hover{
+  opacity: 0.8;
+}
+@media (max-width: 1001px){
+  .col-2{
+  display: flex;
+  }
+  .col-2 img{
+    width: 60%;
+  }
+  .spiegazione{
+    display:none;
+  }
+}
+@media (max-width: 701px){
+  .col-2 img{
+    width: 80%;
+  }
+}
+@media (max-width: 591px){
+  .col-2 img{
+    display: none;
+  }
+  h2{
+    text-align: center;
+    margin: 50px auto;
+    padding: 0;
+  }
+  .app{
+    display: block;
+  }
+}
