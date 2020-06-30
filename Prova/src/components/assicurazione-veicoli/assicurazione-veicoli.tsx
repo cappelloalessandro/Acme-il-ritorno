@@ -2,7 +2,7 @@ import { Component, ComponentInterface, h, State } from '@stencil/core';
 
 @Component({
   tag: 'assicurazione-veicoli',
-  styleUrl: 'assicurazione-veicoli.scss',
+  styleUrl: 'assicurazione-veicoli.css',
   shadow: true,
   assetsDirs: ['assets']
 })
@@ -22,7 +22,6 @@ export class AssicurazioneVeicoli implements ComponentInterface {
                   icon: '/assets/car.png', image: '/assets/car-private.jpg' 
                   })}
                   id="car" src="/assets/white-car.png" alt="car" />
-                  {/* /> */}
               </div>
               <div class="list-item">
                 <img onClick={() => this.changeImage({ 

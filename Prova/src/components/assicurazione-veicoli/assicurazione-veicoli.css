@@ -70,7 +70,6 @@ input {
 .list-item {
   border: none;
   background-image: linear-gradient(to right bottom,#11A5E6,#02336E);
-  // background-color: #F7996E;
   padding: 5px;
   margin: 5px;
   border-radius: 50%;
