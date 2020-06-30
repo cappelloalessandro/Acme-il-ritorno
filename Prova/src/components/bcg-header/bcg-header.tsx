@@ -10,8 +10,9 @@ export class BcgHeader implements ComponentInterface {
   render() {
     return (
     <div class="blu">
+     
         <txt-header></txt-header>
-        <blob-img></blob-img>
+   
     </div>
     
 );

@@ -1,11 +1,30 @@
 
+
+
 .blu{
-  background-image: linear-gradient(to bottom right,#11A5E6,#02336E);  height: 400px;
+
+  /*background-image:  -webkit-linear-gradient(0.80turn,#0000008c, #09b1f970,  #000000db), url(/assets/acme-building-1.jpeg);*/
+  background: rgb(9,177,249);
+  background: linear-gradient(270deg, rgba(2, 87, 123, 0.651) , rgba(5, 20, 152, 0.489) ), url(/assets/acme-building-1.jpeg);
+  width:100%;
+  height: 400px;
+  z-index: 1;
   top:0;
   left: 0;
   display: flex;
   position: relative;
   padding: 50px;
-  margin-bottom:100px
+margin-bottom:100px;
 }
 
+
+@media (max-width: 1260px){
+
+.blu{
+  background: linear-gradient(270deg, rgba(2, 87, 123, 0.651) , rgba(5, 20, 152, 0.489)), url(/assets/acme-building-1.jpeg);
+  width:100%;
+  background-size: cover;
+  position: relative;
+  top:0;
+}
+}

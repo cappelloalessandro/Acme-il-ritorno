@@ -14,8 +14,6 @@ export namespace Components {
     }
     interface BcgHeader {
     }
-    interface BlobImg {
-    }
     interface BottomFooter {
     }
     interface ContactForm {
@@ -59,12 +57,6 @@ declare global {
     var HTMLBcgHeaderElement: {
         prototype: HTMLBcgHeaderElement;
         new (): HTMLBcgHeaderElement;
-    };
-    interface HTMLBlobImgElement extends Components.BlobImg, HTMLStencilElement {
-    }
-    var HTMLBlobImgElement: {
-        prototype: HTMLBlobImgElement;
-        new (): HTMLBlobImgElement;
     };
     interface HTMLBottomFooterElement extends Components.BottomFooter, HTMLStencilElement {
     }
@@ -125,7 +117,6 @@ declare global {
         "banner-app": HTMLBannerAppElement;
         "banner-certezze": HTMLBannerCertezzeElement;
         "bcg-header": HTMLBcgHeaderElement;
-        "blob-img": HTMLBlobImgElement;
         "bottom-footer": HTMLBottomFooterElement;
         "contact-form": HTMLContactFormElement;
         "fetch-articoli": HTMLFetchArticoliElement;
@@ -145,8 +136,6 @@ declare namespace LocalJSX {
     interface BannerCertezze {
     }
     interface BcgHeader {
-    }
-    interface BlobImg {
     }
     interface BottomFooter {
     }
@@ -171,7 +160,6 @@ declare namespace LocalJSX {
         "banner-app": BannerApp;
         "banner-certezze": BannerCertezze;
         "bcg-header": BcgHeader;
-        "blob-img": BlobImg;
         "bottom-footer": BottomFooter;
         "contact-form": ContactForm;
         "fetch-articoli": FetchArticoli;
@@ -191,7 +179,6 @@ declare module "@stencil/core" {
             "banner-app": LocalJSX.BannerApp & JSXBase.HTMLAttributes<HTMLBannerAppElement>;
             "banner-certezze": LocalJSX.BannerCertezze & JSXBase.HTMLAttributes<HTMLBannerCertezzeElement>;
             "bcg-header": LocalJSX.BcgHeader & JSXBase.HTMLAttributes<HTMLBcgHeaderElement>;
-            "blob-img": LocalJSX.BlobImg & JSXBase.HTMLAttributes<HTMLBlobImgElement>;
             "bottom-footer": LocalJSX.BottomFooter & JSXBase.HTMLAttributes<HTMLBottomFooterElement>;
             "contact-form": LocalJSX.ContactForm & JSXBase.HTMLAttributes<HTMLContactFormElement>;
             "fetch-articoli": LocalJSX.FetchArticoli & JSXBase.HTMLAttributes<HTMLFetchArticoliElement>;

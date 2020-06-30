@@ -12,7 +12,8 @@ export class TxtHeader implements ComponentInterface {
 
   render() {
     return (
-    <div >
+    <div>
+      
       <h1>ACME ENTERPRISE</h1>
       <p>
         Servizi finanziari e assicurativi dal 2003
