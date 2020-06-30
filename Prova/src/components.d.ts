@@ -6,12 +6,6 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface AssicurazioneVeicoli {
-    }
-    interface BannerApp {
-    }
-    interface BannerCertezze {
-    }
     interface BcgHeader {
     }
     interface BlobImg {
@@ -22,13 +16,7 @@ export namespace Components {
     }
     interface FetchArticoli {
     }
-    interface FetchSample {
-    }
-    interface FirstContent {
-    }
     interface FormWrapper {
-    }
-    interface HeaderEffetto {
     }
     interface TopNavbar {
     }
@@ -36,24 +24,6 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLAssicurazioneVeicoliElement extends Components.AssicurazioneVeicoli, HTMLStencilElement {
-    }
-    var HTMLAssicurazioneVeicoliElement: {
-        prototype: HTMLAssicurazioneVeicoliElement;
-        new (): HTMLAssicurazioneVeicoliElement;
-    };
-    interface HTMLBannerAppElement extends Components.BannerApp, HTMLStencilElement {
-    }
-    var HTMLBannerAppElement: {
-        prototype: HTMLBannerAppElement;
-        new (): HTMLBannerAppElement;
-    };
-    interface HTMLBannerCertezzeElement extends Components.BannerCertezze, HTMLStencilElement {
-    }
-    var HTMLBannerCertezzeElement: {
-        prototype: HTMLBannerCertezzeElement;
-        new (): HTMLBannerCertezzeElement;
-    };
     interface HTMLBcgHeaderElement extends Components.BcgHeader, HTMLStencilElement {
     }
     var HTMLBcgHeaderElement: {
@@ -84,29 +54,11 @@ declare global {
         prototype: HTMLFetchArticoliElement;
         new (): HTMLFetchArticoliElement;
     };
-    interface HTMLFetchSampleElement extends Components.FetchSample, HTMLStencilElement {
-    }
-    var HTMLFetchSampleElement: {
-        prototype: HTMLFetchSampleElement;
-        new (): HTMLFetchSampleElement;
-    };
-    interface HTMLFirstContentElement extends Components.FirstContent, HTMLStencilElement {
-    }
-    var HTMLFirstContentElement: {
-        prototype: HTMLFirstContentElement;
-        new (): HTMLFirstContentElement;
-    };
     interface HTMLFormWrapperElement extends Components.FormWrapper, HTMLStencilElement {
     }
     var HTMLFormWrapperElement: {
         prototype: HTMLFormWrapperElement;
         new (): HTMLFormWrapperElement;
-    };
-    interface HTMLHeaderEffettoElement extends Components.HeaderEffetto, HTMLStencilElement {
-    }
-    var HTMLHeaderEffettoElement: {
-        prototype: HTMLHeaderEffettoElement;
-        new (): HTMLHeaderEffettoElement;
     };
     interface HTMLTopNavbarElement extends Components.TopNavbar, HTMLStencilElement {
     }
@@ -121,29 +73,17 @@ declare global {
         new (): HTMLTxtHeaderElement;
     };
     interface HTMLElementTagNameMap {
-        "assicurazione-veicoli": HTMLAssicurazioneVeicoliElement;
-        "banner-app": HTMLBannerAppElement;
-        "banner-certezze": HTMLBannerCertezzeElement;
         "bcg-header": HTMLBcgHeaderElement;
         "blob-img": HTMLBlobImgElement;
         "bottom-footer": HTMLBottomFooterElement;
         "contact-form": HTMLContactFormElement;
         "fetch-articoli": HTMLFetchArticoliElement;
-        "fetch-sample": HTMLFetchSampleElement;
-        "first-content": HTMLFirstContentElement;
         "form-wrapper": HTMLFormWrapperElement;
-        "header-effetto": HTMLHeaderEffettoElement;
         "top-navbar": HTMLTopNavbarElement;
         "txt-header": HTMLTxtHeaderElement;
     }
 }
 declare namespace LocalJSX {
-    interface AssicurazioneVeicoli {
-    }
-    interface BannerApp {
-    }
-    interface BannerCertezze {
-    }
     interface BcgHeader {
     }
     interface BlobImg {
@@ -154,31 +94,19 @@ declare namespace LocalJSX {
     }
     interface FetchArticoli {
     }
-    interface FetchSample {
-    }
-    interface FirstContent {
-    }
     interface FormWrapper {
-    }
-    interface HeaderEffetto {
     }
     interface TopNavbar {
     }
     interface TxtHeader {
     }
     interface IntrinsicElements {
-        "assicurazione-veicoli": AssicurazioneVeicoli;
-        "banner-app": BannerApp;
-        "banner-certezze": BannerCertezze;
         "bcg-header": BcgHeader;
         "blob-img": BlobImg;
         "bottom-footer": BottomFooter;
         "contact-form": ContactForm;
         "fetch-articoli": FetchArticoli;
-        "fetch-sample": FetchSample;
-        "first-content": FirstContent;
         "form-wrapper": FormWrapper;
-        "header-effetto": HeaderEffetto;
         "top-navbar": TopNavbar;
         "txt-header": TxtHeader;
     }
@@ -187,18 +115,12 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "assicurazione-veicoli": LocalJSX.AssicurazioneVeicoli & JSXBase.HTMLAttributes<HTMLAssicurazioneVeicoliElement>;
-            "banner-app": LocalJSX.BannerApp & JSXBase.HTMLAttributes<HTMLBannerAppElement>;
-            "banner-certezze": LocalJSX.BannerCertezze & JSXBase.HTMLAttributes<HTMLBannerCertezzeElement>;
             "bcg-header": LocalJSX.BcgHeader & JSXBase.HTMLAttributes<HTMLBcgHeaderElement>;
             "blob-img": LocalJSX.BlobImg & JSXBase.HTMLAttributes<HTMLBlobImgElement>;
             "bottom-footer": LocalJSX.BottomFooter & JSXBase.HTMLAttributes<HTMLBottomFooterElement>;
             "contact-form": LocalJSX.ContactForm & JSXBase.HTMLAttributes<HTMLContactFormElement>;
             "fetch-articoli": LocalJSX.FetchArticoli & JSXBase.HTMLAttributes<HTMLFetchArticoliElement>;
-            "fetch-sample": LocalJSX.FetchSample & JSXBase.HTMLAttributes<HTMLFetchSampleElement>;
-            "first-content": LocalJSX.FirstContent & JSXBase.HTMLAttributes<HTMLFirstContentElement>;
             "form-wrapper": LocalJSX.FormWrapper & JSXBase.HTMLAttributes<HTMLFormWrapperElement>;
-            "header-effetto": LocalJSX.HeaderEffetto & JSXBase.HTMLAttributes<HTMLHeaderEffettoElement>;
             "top-navbar": LocalJSX.TopNavbar & JSXBase.HTMLAttributes<HTMLTopNavbarElement>;
             "txt-header": LocalJSX.TxtHeader & JSXBase.HTMLAttributes<HTMLTxtHeaderElement>;
         }
