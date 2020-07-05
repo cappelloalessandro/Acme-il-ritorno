@@ -1,11 +1,12 @@
+:host {
+  display: block;
+}
 
 div{
   font-family: 'Poppins';
   z-index: 10;
-  position: relative;}
-
-:host {
-  display: block;
+  position: relative;
+  padding: 20px;
 }
 
 h1{
@@ -13,6 +14,7 @@ h1{
   color:white
 
 }
+
 p{
   font-size: 30px;
   color:white;
@@ -20,15 +22,22 @@ p{
 }
 
 button{
+  font-family: 'Poppins';
 text-transform: uppercase;;
-background-color:rgb(230, 197, 7);;
+background-color: #11A5E6;
 border: none;
-color: black;
+outline: none;
+border-radius: 15px;
+color: white;
 padding: 15px 32px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 16px;
 margin: 4px 2px;
-z-index: 1;
-cursor: pointer;}
+cursor: pointer;
+}
+button:hover{
+  opacity: 0.9;
+  transition: all ease 0.5s;
+}

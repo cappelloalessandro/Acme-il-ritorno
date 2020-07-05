@@ -1,15 +1,20 @@
 import { Component, ComponentInterface, h } from '@stencil/core';
-
+/**
+ * txt header component
+ * @author Andrea Lepori
+ */
 @Component({
   tag: 'txt-header',
-  styleUrl: 'txt-header.css',
+  styleUrl: 'txt-header.scss',
   shadow: true,
 })
 
 
 
 export class TxtHeader implements ComponentInterface {
-
+/**
+ * text inside the bcg-header component
+ */
   render() {
     return (
     <div>

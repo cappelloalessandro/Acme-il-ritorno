@@ -20,8 +20,6 @@ export namespace Components {
     }
     interface FetchArticoli {
     }
-    interface FetchSample {
-    }
     interface FirstContent {
     }
     interface FormWrapper {
@@ -76,12 +74,6 @@ declare global {
         prototype: HTMLFetchArticoliElement;
         new (): HTMLFetchArticoliElement;
     };
-    interface HTMLFetchSampleElement extends Components.FetchSample, HTMLStencilElement {
-    }
-    var HTMLFetchSampleElement: {
-        prototype: HTMLFetchSampleElement;
-        new (): HTMLFetchSampleElement;
-    };
     interface HTMLFirstContentElement extends Components.FirstContent, HTMLStencilElement {
     }
     var HTMLFirstContentElement: {
@@ -120,7 +112,6 @@ declare global {
         "bottom-footer": HTMLBottomFooterElement;
         "contact-form": HTMLContactFormElement;
         "fetch-articoli": HTMLFetchArticoliElement;
-        "fetch-sample": HTMLFetchSampleElement;
         "first-content": HTMLFirstContentElement;
         "form-wrapper": HTMLFormWrapperElement;
         "header-effetto": HTMLHeaderEffettoElement;
@@ -143,8 +134,6 @@ declare namespace LocalJSX {
     }
     interface FetchArticoli {
     }
-    interface FetchSample {
-    }
     interface FirstContent {
     }
     interface FormWrapper {
@@ -163,7 +152,6 @@ declare namespace LocalJSX {
         "bottom-footer": BottomFooter;
         "contact-form": ContactForm;
         "fetch-articoli": FetchArticoli;
-        "fetch-sample": FetchSample;
         "first-content": FirstContent;
         "form-wrapper": FormWrapper;
         "header-effetto": HeaderEffetto;
@@ -182,7 +170,6 @@ declare module "@stencil/core" {
             "bottom-footer": LocalJSX.BottomFooter & JSXBase.HTMLAttributes<HTMLBottomFooterElement>;
             "contact-form": LocalJSX.ContactForm & JSXBase.HTMLAttributes<HTMLContactFormElement>;
             "fetch-articoli": LocalJSX.FetchArticoli & JSXBase.HTMLAttributes<HTMLFetchArticoliElement>;
-            "fetch-sample": LocalJSX.FetchSample & JSXBase.HTMLAttributes<HTMLFetchSampleElement>;
             "first-content": LocalJSX.FirstContent & JSXBase.HTMLAttributes<HTMLFirstContentElement>;
             "form-wrapper": LocalJSX.FormWrapper & JSXBase.HTMLAttributes<HTMLFormWrapperElement>;
             "header-effetto": LocalJSX.HeaderEffetto & JSXBase.HTMLAttributes<HTMLHeaderEffettoElement>;

@@ -14,11 +14,6 @@
         display: grid;
         grid-template-columns: 2fr 2fr 0fr;   
     }
-    .little_title:hover{
-        background-color: #02336E;
-        color: white;
-        transition: all ease 0.5s;
-    }
   }
 @media (max-width: 880px){
     .grid{

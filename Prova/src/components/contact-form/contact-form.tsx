@@ -1,21 +1,25 @@
 import { Component, ComponentInterface, h } from '@stencil/core';
-
+/**
+ * contact-form component
+ * @author Lavinia Garau
+ */
 @Component({
   tag: 'contact-form',
   styleUrl: 'contact-form.scss',
   shadow: true,
 })
 export class ContactForm implements ComponentInterface {
-
+/**
+ * wrapper is the form container
+ * bgc is the background image
+ * 
+ */
   render() {
     return (
-      // form component
 
   <div class="wrapper">
 
-    <div class="bgc">
-     {/* <p class="title">NON ESITARE A CONTATTARCI!</p> */}
-    </div>
+    <div class="bgc"></div>
     
     <form>
         <p>

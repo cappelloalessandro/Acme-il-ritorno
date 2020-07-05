@@ -1,12 +1,19 @@
 import { Component, ComponentInterface, h} from '@stencil/core';
-
+/**
+ * form-wrapper component
+ * @author Lavinia Garau
+ */
 @Component({
   tag: 'form-wrapper',
   styleUrl: 'form-wrapper.scss',
   shadow: true,
 })
 export class FormWrapper implements ComponentInterface {
-
+/**
+ * wrapper is form container
+ * title grid is the section name
+ * contact form is the form component
+ */
   render() {
     return (
       <div class="wrapper">
