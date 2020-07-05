@@ -14,15 +14,11 @@ export namespace Components {
     }
     interface BcgHeader {
     }
-    interface BlobImg {
-    }
     interface BottomFooter {
     }
     interface ContactForm {
     }
     interface FetchArticoli {
-    }
-    interface FetchSample {
     }
     interface FirstContent {
     }
@@ -60,12 +56,6 @@ declare global {
         prototype: HTMLBcgHeaderElement;
         new (): HTMLBcgHeaderElement;
     };
-    interface HTMLBlobImgElement extends Components.BlobImg, HTMLStencilElement {
-    }
-    var HTMLBlobImgElement: {
-        prototype: HTMLBlobImgElement;
-        new (): HTMLBlobImgElement;
-    };
     interface HTMLBottomFooterElement extends Components.BottomFooter, HTMLStencilElement {
     }
     var HTMLBottomFooterElement: {
@@ -83,12 +73,6 @@ declare global {
     var HTMLFetchArticoliElement: {
         prototype: HTMLFetchArticoliElement;
         new (): HTMLFetchArticoliElement;
-    };
-    interface HTMLFetchSampleElement extends Components.FetchSample, HTMLStencilElement {
-    }
-    var HTMLFetchSampleElement: {
-        prototype: HTMLFetchSampleElement;
-        new (): HTMLFetchSampleElement;
     };
     interface HTMLFirstContentElement extends Components.FirstContent, HTMLStencilElement {
     }
@@ -125,11 +109,9 @@ declare global {
         "banner-app": HTMLBannerAppElement;
         "banner-certezze": HTMLBannerCertezzeElement;
         "bcg-header": HTMLBcgHeaderElement;
-        "blob-img": HTMLBlobImgElement;
         "bottom-footer": HTMLBottomFooterElement;
         "contact-form": HTMLContactFormElement;
         "fetch-articoli": HTMLFetchArticoliElement;
-        "fetch-sample": HTMLFetchSampleElement;
         "first-content": HTMLFirstContentElement;
         "form-wrapper": HTMLFormWrapperElement;
         "header-effetto": HTMLHeaderEffettoElement;
@@ -146,15 +128,11 @@ declare namespace LocalJSX {
     }
     interface BcgHeader {
     }
-    interface BlobImg {
-    }
     interface BottomFooter {
     }
     interface ContactForm {
     }
     interface FetchArticoli {
-    }
-    interface FetchSample {
     }
     interface FirstContent {
     }
@@ -171,11 +149,9 @@ declare namespace LocalJSX {
         "banner-app": BannerApp;
         "banner-certezze": BannerCertezze;
         "bcg-header": BcgHeader;
-        "blob-img": BlobImg;
         "bottom-footer": BottomFooter;
         "contact-form": ContactForm;
         "fetch-articoli": FetchArticoli;
-        "fetch-sample": FetchSample;
         "first-content": FirstContent;
         "form-wrapper": FormWrapper;
         "header-effetto": HeaderEffetto;
@@ -191,11 +167,9 @@ declare module "@stencil/core" {
             "banner-app": LocalJSX.BannerApp & JSXBase.HTMLAttributes<HTMLBannerAppElement>;
             "banner-certezze": LocalJSX.BannerCertezze & JSXBase.HTMLAttributes<HTMLBannerCertezzeElement>;
             "bcg-header": LocalJSX.BcgHeader & JSXBase.HTMLAttributes<HTMLBcgHeaderElement>;
-            "blob-img": LocalJSX.BlobImg & JSXBase.HTMLAttributes<HTMLBlobImgElement>;
             "bottom-footer": LocalJSX.BottomFooter & JSXBase.HTMLAttributes<HTMLBottomFooterElement>;
             "contact-form": LocalJSX.ContactForm & JSXBase.HTMLAttributes<HTMLContactFormElement>;
             "fetch-articoli": LocalJSX.FetchArticoli & JSXBase.HTMLAttributes<HTMLFetchArticoliElement>;
-            "fetch-sample": LocalJSX.FetchSample & JSXBase.HTMLAttributes<HTMLFetchSampleElement>;
             "first-content": LocalJSX.FirstContent & JSXBase.HTMLAttributes<HTMLFirstContentElement>;
             "form-wrapper": LocalJSX.FormWrapper & JSXBase.HTMLAttributes<HTMLFormWrapperElement>;
             "header-effetto": LocalJSX.HeaderEffetto & JSXBase.HTMLAttributes<HTMLHeaderEffettoElement>;

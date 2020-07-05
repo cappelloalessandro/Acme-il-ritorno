@@ -14,7 +14,7 @@
 }
 /* form */
 .wrapper{
-  background-color: #02336E;
+  background-image: linear-gradient(to right bottom,#11A5E6,#02336E);
   font-family: 'Poppins';
   color: white;
 }
@@ -46,6 +46,7 @@ input{
 }
 
 button{
+  outline: none;
 text-transform: uppercase;
 width: 100%;
 border: 0;
