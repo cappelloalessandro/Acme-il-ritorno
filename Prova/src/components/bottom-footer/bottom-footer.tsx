@@ -1,5 +1,8 @@
 import { Component, ComponentInterface, h } from '@stencil/core';
-
+/**
+ * header component
+ * @author Lavinia Garau
+ */
 @Component({
   tag: 'bottom-footer',
   styleUrl: 'bottom-footer.css',
