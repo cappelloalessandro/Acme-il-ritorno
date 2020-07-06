@@ -66,6 +66,9 @@ input {
   bottom: -65px;
   left: -5px;
 }
+.vettura{
+  text-align: center;
+}  
 
 .list-item {
   border: none;
@@ -93,4 +96,39 @@ button{
   border: none;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
+}
+@media (max-width: 1010px){
+  .col-2{
+    grid-template-columns: 1fr;
+  }
+  .grid{
+    margin-top: 0;
+  }
+  .select{
+    text-align: center;
+    padding: 0;
+  }
+  h3{
+    font-size: 26px;
+  }
+  h5{
+    font-size: 20px;
+  }
+  img{
+    text-align: center;
+  }
+  .targa{
+    width: 100%;
+  }
+  .vettura{
+    text-align: center;
+  }  
+} 
+@media (max-width:530px){
+  .col-2{
+    padding: 5px;
+  }
+  input{
+    width: 70%;
+  }
 }

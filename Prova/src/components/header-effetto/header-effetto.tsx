@@ -11,8 +11,8 @@ export class HeaderEffetto implements ComponentInterface {
     return (
      <article class="grid opacity">
       <div>
-        <h3> Ciao questa è una frase ad effetto </h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, blanditiis? Dolore repellendus iusto esse natus eius totam quaerat tempora ut aut labore, dolores, porro pariatur ducimus accusamus recusandae. Nesciunt, nemo.</p>
+        <h3>Emergenza sanitaria covid</h3>
+        <p>Si informa che tutte le scadenze dei <b>Pacchetti di Manutenzione</b> previste nei mesi di marzo e di aprile verranno posticipate di <b>90 giorni.</b> La nuova scadenza dei servizi di manutenzione scaduti a marzo diverrà pertanto <b>30/06/2020 </b> mentre quella dei servizi in scadenza ad aprile diverrà il <b>31/07/2020.</b></p>
       </div>
      </article>
     );

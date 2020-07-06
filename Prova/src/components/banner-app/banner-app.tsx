@@ -16,7 +16,8 @@ export class BannerApp implements ComponentInterface {
         </div>
         <div>
           <h2>Le tue Assicurazioni, in un unica app, comodamente alla portata di click! </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa laborum ducimus. Voluptatum nisi corporis deserunt nulla facere reprehenderit iure non id, accusamus quisquam aperiam distinctio totam obcaecati dicta ab?</p>
+          {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis culpa laborum ducimus. Voluptatum nisi corporis deserunt nulla facere reprehenderit iure non id, accusamus quisquam aperiam distinctio totam obcaecati dicta ab?</p> */}
+          <a href="javascript:void(0)"><b>Scarica la nostra app!</b></a>
         </div>
       </div>
     );

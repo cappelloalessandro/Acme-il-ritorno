@@ -1,5 +1,8 @@
 import { Component, ComponentInterface, h } from '@stencil/core';
-
+/**
+ * footer component
+ * @author Lavinia Garau
+ */
 @Component({
   tag: 'bottom-footer',
   styleUrl: 'bottom-footer.css',
@@ -11,8 +14,9 @@ export class BottomFooter implements ComponentInterface {
     return (
       <footer class="wrapper grid col-3 full-height">
         <div class="col">
-            <p>Sito realizzato per scopi didattici. </p>
-            <p>Ogni informazione è fittizia.</p>
+        <p>Il sito è stato creato a scopo didattico dagli allievi del corso accademico primo anno della Scuola Mohole di Web e 
+          DigitalMedia.</p> 
+        <p>I diritti dei contenuti e dei marchi citati appartengono ai loro legittimi proprietari.</p>
         </div>
 
         <div class="col">

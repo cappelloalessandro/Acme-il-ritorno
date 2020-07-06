@@ -11,18 +11,17 @@ div{
 
 h1{
   font-size: 60px;
-  color:white
-
+  color:white;
+  margin: 0;
 }
 
-p{
+h2{
   font-size: 30px;
   color:white;
-
 }
 
 button{
-  font-family: 'Poppins';
+font-family: 'Poppins';
 text-transform: uppercase;;
 background-color: #11A5E6;
 border: none;
@@ -40,4 +39,9 @@ cursor: pointer;
 button:hover{
   opacity: 0.9;
   transition: all ease 0.5s;
+}
+@media (max-width:500px){
+  h1{
+    font-size: 50px;
+  }
 }

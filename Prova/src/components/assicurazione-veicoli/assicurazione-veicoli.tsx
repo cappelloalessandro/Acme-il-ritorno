@@ -42,7 +42,7 @@ export class AssicurazioneVeicoli implements ComponentInterface {
           </div>
           {/* <input type="text" placeholder="Targa della tua vettura"></input> */}
         </div>
-        <div>
+        <div class="vettura">
           <img id="macchina" class="car" src={this.imagePath} alt="car" />
         </div>
       </div>

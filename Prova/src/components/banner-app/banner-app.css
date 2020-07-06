@@ -36,3 +36,41 @@ p{
   text-align: left;
   padding: 0 100px 0 0;
 }
+a{
+  /* text-align: left; */
+  width: 250px;
+  display: block;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  /* background-image: linear-gradient(to right bottom,#11A5E6,#02336E); */
+  background-color: #fff;
+  color: #02336E;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+a:hover{
+  opacity: 0.8;
+}
+@media (max-width: 1001px){
+  .col-2{
+  display: flex;
+  }
+  .col-2 img{
+    width: 60%;
+  }
+  .spiegazione{
+    display:none;
+  }
+}
+@media (max-width: 701px){
+  .col-2 img{
+    width: 80%;
+  }
+}
+@media (max-width: 591px){
+  .col-2{
+    display: none;
+  }
+}
