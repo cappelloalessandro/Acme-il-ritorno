@@ -30,6 +30,8 @@ export namespace Components {
     }
     interface TxtHeader {
     }
+    interface WebsiteContainer {
+    }
 }
 declare global {
     interface HTMLAssicurazioneVeicoliElement extends Components.AssicurazioneVeicoli, HTMLStencilElement {
@@ -104,6 +106,12 @@ declare global {
         prototype: HTMLTxtHeaderElement;
         new (): HTMLTxtHeaderElement;
     };
+    interface HTMLWebsiteContainerElement extends Components.WebsiteContainer, HTMLStencilElement {
+    }
+    var HTMLWebsiteContainerElement: {
+        prototype: HTMLWebsiteContainerElement;
+        new (): HTMLWebsiteContainerElement;
+    };
     interface HTMLElementTagNameMap {
         "assicurazione-veicoli": HTMLAssicurazioneVeicoliElement;
         "banner-app": HTMLBannerAppElement;
@@ -117,6 +125,7 @@ declare global {
         "header-effetto": HTMLHeaderEffettoElement;
         "top-navbar": HTMLTopNavbarElement;
         "txt-header": HTMLTxtHeaderElement;
+        "website-container": HTMLWebsiteContainerElement;
     }
 }
 declare namespace LocalJSX {
@@ -144,6 +153,8 @@ declare namespace LocalJSX {
     }
     interface TxtHeader {
     }
+    interface WebsiteContainer {
+    }
     interface IntrinsicElements {
         "assicurazione-veicoli": AssicurazioneVeicoli;
         "banner-app": BannerApp;
@@ -157,6 +168,7 @@ declare namespace LocalJSX {
         "header-effetto": HeaderEffetto;
         "top-navbar": TopNavbar;
         "txt-header": TxtHeader;
+        "website-container": WebsiteContainer;
     }
 }
 export { LocalJSX as JSX };
@@ -175,6 +187,7 @@ declare module "@stencil/core" {
             "header-effetto": LocalJSX.HeaderEffetto & JSXBase.HTMLAttributes<HTMLHeaderEffettoElement>;
             "top-navbar": LocalJSX.TopNavbar & JSXBase.HTMLAttributes<HTMLTopNavbarElement>;
             "txt-header": LocalJSX.TxtHeader & JSXBase.HTMLAttributes<HTMLTxtHeaderElement>;
+            "website-container": LocalJSX.WebsiteContainer & JSXBase.HTMLAttributes<HTMLWebsiteContainerElement>;
         }
     }
 }

@@ -15,9 +15,6 @@ export class FirstContent implements ComponentInterface {
               <h4>La tua polizza oggi è su misura per te!</h4>
               <h2>Innovativa, Sicura, Veloce!</h2>
           </div>
-          <div class="sottotitolo">
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, tenetur? Ullam nihil fugiat culpa error magnam, dolores recusandae, facere saepe asperiores ducimus tenetur neque molestias dicta quaerat aut velit non?</p>
-          </div>
         </div>
 
        <div class="grid col-4">
@@ -25,7 +22,7 @@ export class FirstContent implements ComponentInterface {
           <img class="icona" src="/assets/applicazione.png" alt="tempo"/>
           <h3> Scopri la nostra Applicazione</h3>
           <p class="card">Da oggi, i tuoi documenti comodamente a portata di click, portali sempre con te con <b>la nostra app.</b> </p>
-          <a href="javascript:void(0)">Scopri al nostra app</a>   
+          <a href="javascript:void(0)">Scopri la nostra app</a>   
         </article>
 
        <article>

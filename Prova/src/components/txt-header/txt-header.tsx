@@ -20,9 +20,7 @@ export class TxtHeader implements ComponentInterface {
     <div>
       
       <h1>ACME ENTERPRISE</h1>
-      <p>
-        Servizi finanziari e assicurativi dal 2003
-      </p>
+      <h2>Servizi finanziari e assicurativi dal 2003</h2>
       <button>
         Scopri i nostri servizi
       </button>

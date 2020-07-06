@@ -10,7 +10,7 @@ export class BannerCertezze implements ComponentInterface {
   render() {
     return (
     <div>
-      <h4>Perchè i nostri clienti scelgono ACME</h4>
+      <h4>Perchè i nostri clienti scelgono <span>ACME</span></h4>
      <div class="grid col-4">
        <article>
           <img class="icona" src="/assets/time.png" alt="tempo"/>
