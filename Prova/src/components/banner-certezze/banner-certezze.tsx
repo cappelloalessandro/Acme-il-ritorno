@@ -9,6 +9,11 @@ export class BannerCertezze implements ComponentInterface {
 
   render() {
     return (
+<<<<<<< Updated upstream
+=======
+    <div>
+      <h4>Perchè i nostri clienti scelgono <span>ACME</span></h4>
+>>>>>>> Stashed changes
      <div class="grid col-4">
        <article>
           <img class="icona" src="/assets/time.png" alt="prova"/>

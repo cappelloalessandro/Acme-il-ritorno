@@ -10,17 +10,28 @@ span{
 article{
   background-image: url(assets/acme-people-blue.jpg);
   background-repeat: no-repeat;
+<<<<<<< Updated upstream
+=======
+  margin-top: 100px;
+>>>>>>> Stashed changes
   height: 200px;
   width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+<<<<<<< Updated upstream
   margin-bottom: 100px;
 }
 .grid{
   display: grid;
   grid-template-columns: 1fr;
+=======
+}
+.grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+>>>>>>> Stashed changes
 }
 .opacity {
   backdrop-filter: opacity(1.4);
@@ -29,7 +40,7 @@ h3{
   color: #fff;
   font-size: 24px;
   text-transform: uppercase;
-  padding-top: 50px;
+  padding-top: 40px;
   padding-left: 50px;
 }
 p{
